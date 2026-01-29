@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leben - Ina Berneis</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <script>
+        // Dark mode detection and initialization
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body class="h-full bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <div class="flex h-full">
+        <!-- Vertical Navigation Sidebar -->
+        <nav class="w-64 min-h-screen bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 p-6 flex flex-col">
+            <!-- Site Title -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Ina Berneis</h1>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Photographer</p>
+                <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">1927 - 2003</p>
+            </div>
+
+            <!-- Language Switcher -->
+            <div class="flex gap-2 mb-8 pb-6 border-b border-gray-200 dark:border-gray-800">
+                <a href="../en/life.html" class="px-3 py-1 text-sm rounded text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">EN</a>
+                <a href="../de/life.html" class="px-3 py-1 text-sm rounded bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 transition-colors">DE</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="space-y-1 flex-1">
+                <li>
+                    <a href="life.html" class="nav-link font-semibold bg-gray-200 dark:bg-gray-800">Leben</a>
+                </li>
+                <li>
+                    <a href="career.html" class="nav-link ">Karriere</a>
+                </li>
+                <li class="mt-6">
+                    <h2 class="text-xs font-semibold text-gray-500 dark:text-gray-500 uppercase tracking-wider mb-2 px-3">Fotografie</h2>
+                    <ul class="space-y-1">
+                        <li><a href="actor1.html" class="nav-link ">Schauspieler 1</a></li>
+                        <li><a href="actor2.html" class="nav-link ">Marlon</a></li>
+                        <li><a href="movie1.html" class="nav-link ">Film 1</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Footer -->
+            <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+                <p class="text-xs text-gray-500 dark:text-gray-500">&copy; 2003 Estate of Ina Berneis</p>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 overflow-y-auto">
+            <div class="max-w-5xl mx-auto px-8 py-12">
+                <h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">Leben</h1>
+<p class="text-lg text-gray-700 dark:text-gray-300 mb-12 leading-relaxed">Ein kurzer Überblick über das Leben von Ina Berneis.</p>
+<div class="space-y-0">
+    <div class="timeline-item">
+        <h2 class="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100">1948</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">Geboren in...</p>
+        <div class="photo-container max-w-md">
+            <img src="../assets/images/dummy.svg" alt="Photo from 1948" class="w-full h-auto">
+        </div>
+    </div>
+    <div class="timeline-item">
+        <h2 class="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100">1968</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">Begann ihre Karriere als Fotografin.</p>
+        <div class="photo-container max-w-md">
+            <img src="../assets/images/dummy.svg" alt="Photo from 1968" class="w-full h-auto">
+        </div>
+    </div>
+    <div class="timeline-item">
+        <h2 class="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100">2023</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">Verstorben.</p>
+        <div class="photo-container max-w-md">
+            <img src="../assets/images/dummy.svg" alt="Photo from 2023" class="w-full h-auto">
+        </div>
+    </div>
+</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

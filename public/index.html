@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ina Berneis - Photographer</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script>
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('de')) {
+            window.location.replace("de/life.html");
+        } else {
+            window.location.replace("en/life.html");
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+    <div class="min-h-screen flex items-center justify-center p-8">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-4">Ina Berneis</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">Photographer (1927-2003)</p>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">Redirecting...</p>
+            <p class="text-gray-600 dark:text-gray-400 mb-6">If you are not redirected, please choose your language:</p>
+            <div class="flex gap-4 justify-center">
+                <a href="en/life.html" class="px-6 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors">English</a>
+                <a href="de/life.html" class="px-6 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors">Deutsch</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

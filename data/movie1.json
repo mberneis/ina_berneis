@@ -1,0 +1,18 @@
+{
+    "title_en": "Movie 1",
+    "title_de": "Film 1",
+    "description_en": "This is a description of the first movie.",
+    "description_de": "Dies ist eine Beschreibung des ersten Films.",
+    "photos": [
+        {
+            "photo": "assets/images/dummy.svg",
+            "description_en": "A scene from Movie 1.",
+            "description_de": "Eine Szene aus Film 1."
+        },
+        {
+            "photo": "assets/images/dummy.svg",
+            "description_en": "Another scene from Movie 1.",
+            "description_de": "Eine weitere Szene aus Film 1."
+        }
+    ]
+}

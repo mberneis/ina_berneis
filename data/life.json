@@ -1,0 +1,26 @@
+{
+    "title_en": "Life",
+    "title_de": "Leben",
+    "description_en": "A brief overview of Ina Berneis' life.",
+    "description_de": "Ein kurzer Überblick über das Leben von Ina Berneis.",
+    "events": [
+        {
+            "date": "1948",
+            "description_en": "Born in...",
+            "description_de": "Geboren in...",
+            "photo": "assets/images/dummy.svg"
+        },
+        {
+            "date": "1968",
+            "description_en": "Started her photography career.",
+            "description_de": "Begann ihre Karriere als Fotografin.",
+            "photo": "assets/images/dummy.svg"
+        },
+        {
+            "date": "2023",
+            "description_en": "Passed away.",
+            "description_de": "Verstorben.",
+            "photo": "assets/images/dummy.svg"
+        }
+    ]
+}
