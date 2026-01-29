@@ -22,12 +22,14 @@ def create_page(lang, page_name, data, template):
         'en': {
             'life': 'Life',
             'career': 'Career',
-            'photography': 'Photography'
+            'photography': 'Photography',
+            'photographer': 'Photographer'
         },
         'de': {
             'life': 'Leben',
             'career': 'Karriere',
-            'photography': 'Fotografie'
+            'photography': 'Fotografie',
+            'photographer': 'Fotografin'
         }
     }
 
@@ -97,7 +99,8 @@ def create_page(lang, page_name, data, template):
             lang_de_active=lang_de_active,
             life_label=labels[lang]['life'],
             career_label=labels[lang]['career'],
-            photography_label=labels[lang]['photography']
+            photography_label=labels[lang]['photography'],
+            photographer_label=labels[lang]['photographer']
         ))
 
 def main():

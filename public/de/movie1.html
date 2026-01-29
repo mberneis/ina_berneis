@@ -14,25 +14,50 @@
         }
     </script>
 </head>
-<body class="h-full bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body class="h-full text-gray-900 transition-colors duration-300 bg-white dark:bg-gray-950 dark:text-gray-100">
+    <!-- Mobile Header -->
+    <header class="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-4 py-3 border-b border-gray-200 md:hidden bg-gray-50 dark:bg-gray-900 dark:border-gray-800">
+        <div>
+            <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Ina Berneis</h1>
+            <p class="text-xs text-gray-600 dark:text-gray-400">Fotografin <span class="text-gray-500 dark:text-gray-500">1927 - 2003</span></p>
+        </div>
+        <button id="menu-toggle" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menu-overlay" class="fixed inset-0 z-40 hidden md:hidden bg-black/50" aria-hidden="true"></div>
+
     <div class="flex h-full">
         <!-- Vertical Navigation Sidebar -->
-        <nav class="w-64 min-h-screen bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 p-6 flex flex-col">
+        <nav id="sidebar" class="fixed inset-y-0 left-0 z-50 flex flex-col w-64 min-h-screen p-6 transition-transform duration-300 ease-in-out transform -translate-x-full border-r border-gray-200 md:static bg-gray-50 dark:bg-gray-900 dark:border-gray-800 md:translate-x-0">
             <!-- Site Title -->
-            <div class="mb-8">
-                <h1 class="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Ina Berneis</h1>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Photographer</p>
-                <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">1927 - 2003</p>
+            <div class="hidden mb-8 md:block">
+                <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-gray-100">Ina Berneis</h1>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Fotografin</p>
+                <p class="mt-1 text-xs text-gray-500 dark:text-gray-500">1927 - 2003</p>
+            </div>
+
+            <!-- Mobile: Close button and spacing -->
+            <div class="flex justify-end mb-4 -mt-2 -mr-2 md:hidden">
+                <button id="menu-close" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
             </div>
 
             <!-- Language Switcher -->
-            <div class="flex gap-2 mb-8 pb-6 border-b border-gray-200 dark:border-gray-800">
+            <div class="flex gap-2 pb-6 mb-8 border-b border-gray-200 dark:border-gray-800">
                 <a href="../en/movie1.html" class="px-3 py-1 text-sm rounded text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">EN</a>
                 <a href="../de/movie1.html" class="px-3 py-1 text-sm rounded bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 transition-colors">DE</a>
             </div>
 
             <!-- Navigation Links -->
-            <ul class="space-y-1 flex-1">
+            <ul class="flex-1 space-y-1">
                 <li>
                     <a href="life.html" class="nav-link ">Leben</a>
                 </li>
@@ -40,7 +65,7 @@
                     <a href="career.html" class="nav-link ">Karriere</a>
                 </li>
                 <li class="mt-6">
-                    <h2 class="text-xs font-semibold text-gray-500 dark:text-gray-500 uppercase tracking-wider mb-2 px-3">Fotografie</h2>
+                    <h2 class="px-3 mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase dark:text-gray-500">Fotografie</h2>
                     <ul class="space-y-1">
                         <li><a href="actor1.html" class="nav-link ">Schauspieler 1</a></li>
                         <li><a href="actor2.html" class="nav-link ">Marlon</a></li>
@@ -50,14 +75,14 @@
             </ul>
 
             <!-- Footer -->
-            <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+            <div class="pt-6 mt-8 border-t border-gray-200 dark:border-gray-800">
                 <p class="text-xs text-gray-500 dark:text-gray-500">&copy; 2003 Estate of Ina Berneis</p>
             </div>
         </nav>
 
         <!-- Main Content Area -->
-        <main class="flex-1 overflow-y-auto">
-            <div class="max-w-5xl mx-auto px-8 py-12">
+        <main class="flex-1 pt-16 overflow-y-auto md:pt-0">
+            <div class="max-w-5xl px-4 py-8 mx-auto md:px-8 md:py-12">
                 <h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">Film 1</h1>
 <p class="text-lg text-gray-700 dark:text-gray-300 mb-12 leading-relaxed">Dies ist eine Beschreibung des ersten Films.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -77,5 +102,56 @@
             </div>
         </main>
     </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        (function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const menuOverlay = document.getElementById('menu-overlay');
+            const sidebar = document.getElementById('sidebar');
+
+            function openMenu() {
+                sidebar.classList.remove('-translate-x-full');
+                sidebar.classList.add('translate-x-0');
+                menuOverlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                sidebar.classList.add('-translate-x-full');
+                sidebar.classList.remove('translate-x-0');
+                menuOverlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+
+            menuToggle.addEventListener('click', openMenu);
+            menuClose.addEventListener('click', closeMenu);
+            menuOverlay.addEventListener('click', closeMenu);
+
+            // Close menu on navigation link click (mobile)
+            sidebar.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 768) {
+                        closeMenu();
+                    }
+                });
+            });
+
+            // Close menu on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeMenu();
+                }
+            });
+
+            // Reset on resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) {
+                    closeMenu();
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
