@@ -31,6 +31,11 @@
     <!-- Mobile Menu Overlay -->
     <div id="menu-overlay" class="fixed inset-0 z-40 hidden md:hidden bg-black/50" aria-hidden="true"></div>
 
+    <!-- Photo Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
     <div class="flex h-full">
         <!-- Vertical Navigation Sidebar -->
         <nav id="sidebar" class="fixed inset-y-0 left-0 z-50 flex flex-col w-64 min-h-screen p-6 transition-transform duration-300 ease-in-out transform -translate-x-full border-r border-gray-200 md:static bg-gray-50 dark:bg-gray-900 dark:border-gray-800 md:translate-x-0">
@@ -91,19 +96,43 @@
         <div class="photo-container">
             <img src="../assets/images/MaronBrando1.png" alt="Marlon Brando" class="w-full h-auto">
         </div>
-        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein Porträt von Schauspieler 1.</p>
+        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein Porträt von Marlon Brando</p>
     </div>
     <div class="space-y-4">
         <div class="photo-container">
             <img src="../assets/images/MaronBrando2.png" alt="Marlon Brando" class="w-full h-auto">
         </div>
-        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein Porträt von Schauspieler 1.</p>
+        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein weiteres Porträt von Marlon Brando</p>
     </div>
     <div class="space-y-4">
         <div class="photo-container">
             <img src="../assets/images/MaronBrando3.png" alt="Marlon Brando" class="w-full h-auto">
         </div>
-        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein weiteres Porträt von Schauspieler 1.</p>
+        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein weiteres Porträt von Marlon Brando</p>
+    </div>
+    <div class="space-y-4">
+        <div class="photo-container">
+            <img src="../assets/images/MaronBrando4.png" alt="Marlon Brando" class="w-full h-auto">
+        </div>
+        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein weiteres Porträt von Marlon Brando</p>
+    </div>
+    <div class="space-y-4">
+        <div class="photo-container">
+            <img src="../assets/images/MaronBrando5.png" alt="Marlon Brando" class="w-full h-auto">
+        </div>
+        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein weiteres Porträt von Marlon Brando</p>
+    </div>
+    <div class="space-y-4">
+        <div class="photo-container">
+            <img src="../assets/images/MaronBrando6.png" alt="Marlon Brando" class="w-full h-auto">
+        </div>
+        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein weiteres Porträt von Marlon Brando</p>
+    </div>
+    <div class="space-y-4">
+        <div class="photo-container">
+            <img src="../assets/images/MaronBrando7.png" alt="Marlon Brando" class="w-full h-auto">
+        </div>
+        <p class="text-sm italic text-gray-600 dark:text-gray-400">Ein weiteres Porträt von Marlon Brando</p>
     </div>
 </div>
             </div>
@@ -145,17 +174,62 @@
                 });
             });
 
-            // Close menu on escape key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    closeMenu();
-                }
-            });
-
             // Reset on resize
             window.addEventListener('resize', () => {
                 if (window.innerWidth >= 768) {
                     closeMenu();
+                }
+            });
+        })();
+    </script>
+
+    <!-- Lightbox Script -->
+    <script>
+        (function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            function openLightbox(src, alt) {
+                lightboxImg.src = src;
+                lightboxImg.alt = alt || '';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Click on photo to open lightbox
+            document.querySelectorAll('.photo-container').forEach(container => {
+                container.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    if (img) {
+                        openLightbox(img.src, img.alt);
+                    }
+                });
+            });
+
+            // Click anywhere on lightbox to close
+            lightbox.addEventListener('click', closeLightbox);
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    if (lightbox.classList.contains('active')) {
+                        closeLightbox();
+                    } else {
+                        // Close menu if open
+                        const sidebar = document.getElementById('sidebar');
+                        const menuOverlay = document.getElementById('menu-overlay');
+                        if (!menuOverlay.classList.contains('hidden')) {
+                            sidebar.classList.add('-translate-x-full');
+                            sidebar.classList.remove('translate-x-0');
+                            menuOverlay.classList.add('hidden');
+                            document.body.style.overflow = '';
+                        }
+                    }
                 }
             });
         })();

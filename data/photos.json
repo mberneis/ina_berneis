@@ -8,17 +8,37 @@
             {
                 "photo": "assets/images/MaronBrando1.png",
                 "description_en": "A portrait of Marlon Brando.",
-                "description_de": "Ein Porträt von Schauspieler 1."
+                "description_de": "Ein Porträt von Marlon Brando"
             },
             {
                 "photo": "assets/images/MaronBrando2.png",
-                "description_en": "A portrait of Marlon Brando.",
-                "description_de": "Ein Porträt von Schauspieler 1."
+                "description_en": "Another portrait of Marlon Brando.",
+                "description_de": "Ein weiteres Porträt von Marlon Brando"
             },
             {
                 "photo": "assets/images/MaronBrando3.png",
-                "description_en": "Another portrait of Marlon Brando.",
-                "description_de": "Ein weiteres Porträt von Schauspieler 1."
+                "description_en": "Marlon Brando - movie set.",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MaronBrando4.png",
+                "description_en": "Marlon Brando - movie set.",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MaronBrando5.png",
+                "description_en": "",
+                "description_de": "Ina mit Ihrem Sohn Michael und Marlon"
+            },
+            {
+                "photo": "assets/images/MaronBrando6.png",
+                "description_en": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando.",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MaronBrando7.png",
+                "description_en": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando.",
+                "description_de": ""
             }
         ]
     },
