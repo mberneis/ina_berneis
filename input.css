@@ -64,7 +64,7 @@
 
   @media (prefers-color-scheme: dark) {
     .nav-link {
-      color: var(--color-gray-100);
+      color: var(--color-gray-400);
     }
 
     .nav-link:hover {

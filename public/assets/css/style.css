@@ -602,6 +602,18 @@
       padding-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .md\:text-3xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
   .md\:text-5xl {
     @media (width >= 48rem) {
       font-size: var(--text-5xl);
@@ -707,7 +719,7 @@
   }
   @media (prefers-color-scheme: dark) {
     .nav-link {
-      color: var(--color-gray-100);
+      color: var(--color-gray-400);
     }
     .nav-link:hover {
       background-color: var(--color-gray-800);
