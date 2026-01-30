@@ -47,8 +47,15 @@ def create_page(lang, page_name, data, template, photos):
 
     # Create life page with timeline
     if page_name == 'life':
-        content = f'<h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
-        content += f'<p class="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{data[f"description_{lang}"]}</p>\n'
+        content = '<div class="flex flex-col-reverse mb-12 md:flex-row md:items-start md:gap-8">\n'
+        content += '    <div class="flex-1">\n'
+        content += f'        <h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
+        content += f'        <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{data[f"description_{lang}"]}</p>\n'
+        content += '    </div>\n'
+        content += '    <div class="w-1/3 mb-6 md:mb-0 shrink-0">\n'
+        content += '        <img src="../assets/images/ina.png" alt="Ina Berneis" class="w-full h-auto rounded-lg shadow-lg">\n'
+        content += '    </div>\n'
+        content += '</div>\n'
         content += '<div class="space-y-0">\n'
         for event in data["events"]:
             content += '    <div class="timeline-item">\n'

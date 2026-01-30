@@ -2,8 +2,8 @@
     {
         "title_en": "Marlon Brando",
         "title_de": "Marlon Brando",
-        "description_en": "This is a description of the first actor.",
-        "description_de": "Dies ist eine Beschreibung des ersten Schauspielers.",
+        "description_en": "Marlon and Ina were neighbors in Beverly Hills and good friends.",
+        "description_de": "Marlon und Ina waren Nachbarn in Beverly Hills und gute Freunde.",
         "photos": [
             {
                 "photo": "assets/images/MaronBrando1.png",
@@ -17,28 +17,28 @@
             },
             {
                 "photo": "assets/images/MaronBrando3.png",
-                "description_en": "Marlon Brando - movie set.",
-                "description_de": ""
+                "description_en": "Marlon Brando and Lisa Lu - movie set 'One-Eyed Jacks'.",
+                "description_de": "Marlon Brando mit Lisa Lu - Filmset 'One-Eyed Jacks'."
             },
             {
                 "photo": "assets/images/MaronBrando4.png",
-                "description_en": "Marlon Brando - movie set.",
-                "description_de": ""
-            },
-            {
-                "photo": "assets/images/MaronBrando5.png",
-                "description_en": "",
-                "description_de": "Ina mit Ihrem Sohn Michael und Marlon"
+                "description_en": "Marlon Brando with Slim Pickens - movie set 'One-Eyed Jacks'.",
+                "description_de": "Marlon Brando mit Slim Pickens - Filmset 'One-Eyed Jacks'."
             },
             {
                 "photo": "assets/images/MaronBrando6.png",
-                "description_en": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando.",
-                "description_de": ""
+                "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando.",
+                "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando."
             },
             {
                 "photo": "assets/images/MaronBrando7.png",
-                "description_en": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando.",
-                "description_de": ""
+                "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando.",
+                "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando."
+            },
+            {
+                "photo": "assets/images/MaronBrando5.png",
+                "description_en": "Ina with her son Michael and Marlon.",
+                "description_de": "Ina mit Ihrem Sohn Michael und Marlon."
             }
         ]
     },
