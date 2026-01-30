@@ -6,18 +6,18 @@
         "description_de": "Dies ist eine Beschreibung des ersten Schauspielers.",
         "photos": [
             {
-                "photo": "assets/images/dummy.svg",
-                "description_en": "A portrait of Actor 1.",
+                "photo": "assets/images/MaronBrando1.png",
+                "description_en": "A portrait of Marlon Brando.",
                 "description_de": "Ein Porträt von Schauspieler 1."
             },
             {
-                "photo": "assets/images/dummy.svg",
-                "description_en": "A portrait of Actor 1.",
+                "photo": "assets/images/MaronBrando2.png",
+                "description_en": "A portrait of Marlon Brando.",
                 "description_de": "Ein Porträt von Schauspieler 1."
             },
             {
-                "photo": "assets/images/dummy.svg",
-                "description_en": "Another portrait of Actor 1.",
+                "photo": "assets/images/MaronBrando3.png",
+                "description_en": "Another portrait of Marlon Brando.",
                 "description_de": "Ein weiteres Porträt von Schauspieler 1."
             }
         ]
