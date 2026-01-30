@@ -68,7 +68,7 @@
                     <h2 class="px-3 mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase dark:text-gray-500">Photography</h2>
                     <ul class="space-y-1">
                         <li><a href="actor1.html" class="nav-link font-semibold bg-gray-200 dark:bg-gray-800">Actor 1</a></li>
-                        <li><a href="actor2.html" class="nav-link ">Marlon</a></li>
+                        <li><a href="actor2.html" class="nav-link ">Reiner Schöne</a></li>
                         <li><a href="movie1.html" class="nav-link ">Movie 1</a></li>
                     </ul>
                 </li>
@@ -76,7 +76,8 @@
 
             <!-- Footer -->
             <div class="pt-6 mt-8 border-t border-gray-200 dark:border-gray-800">
-                <p class="text-xs text-gray-500 dark:text-gray-500">&copy; 2003 Estate of Ina Berneis</p>
+                <p class="text-xs text-gray-500 dark:text-gray-500">&copy; <span id="copyright-year"></span> Estate of Ina Berneis</p>
+                <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
             </div>
         </nav>
 

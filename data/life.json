@@ -5,9 +5,9 @@
     "description_de": "Ein kurzer Überblick über das Leben von Ina Berneis.",
     "events": [
         {
-            "date": "1948",
-            "description_en": "Born in...",
-            "description_de": "Geboren in...",
+            "date": "7/1927",
+            "description_en": "Born in Berlin, Germany",
+            "description_de": "Geboren in Berlin",
             "photo": "assets/images/dummy.svg"
         },
         {
@@ -17,9 +17,9 @@
             "photo": "assets/images/dummy.svg"
         },
         {
-            "date": "2023",
-            "description_en": "Passed away.",
-            "description_de": "Verstorben.",
+            "date": "5/2023",
+            "description_en": "Passed away in New York. Her ashes were dispersed over the Hudson River as per her wish.",
+            "description_de": "Verstorben in New York. Ihre Asche wurde nach Ihrem Wunsch über den Hudson River verstreut",
             "photo": "assets/images/dummy.svg"
         }
     ]
