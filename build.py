@@ -1,22 +1,34 @@
 import json
 import os
+import re
+import unicodedata
 
-def get_nav_items(lang, current_page):
-    """Generate navigation items dynamically from data files"""
+def slugify(text):
+    """Convert text to URL-friendly slug"""
+    # Normalize unicode characters (e.g., ö -> o)
+    text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('ascii')
+    # Convert to lowercase and replace spaces/special chars with hyphens
+    text = re.sub(r'[^\w\s-]', '', text.lower())
+    text = re.sub(r'[-\s]+', '-', text).strip('-')
+    return text
+
+def load_photos():
+    """Load all photo entries from photos.json"""
+    with open('data/photos.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def get_nav_items(lang, current_page, photos):
+    """Generate navigation items from photos array (order preserved)"""
     nav_items = []
-    photography_files = [f for f in os.listdir('data') if f not in ['life.json', 'career.json']]
-
-    for file in sorted(photography_files):
-        page_name = file.replace('.json', '')
-        with open(f'data/{file}', 'r') as f:
-            data = json.load(f)
-            title = data[f'title_{lang}']
-            active_class = 'font-semibold bg-gray-200 dark:bg-gray-800' if current_page == page_name else ''
-            nav_items.append(f'<li><a href="{page_name}.html" class="nav-link {active_class}">{title}</a></li>')
+    for item in photos:
+        page_name = slugify(item['title_en'])
+        title = item[f'title_{lang}']
+        active_class = 'font-semibold bg-gray-200 dark:bg-gray-800' if current_page == page_name else ''
+        nav_items.append(f'<li><a href="{page_name}.html" class="nav-link {active_class}">{title}</a></li>')
 
     return '\n                        '.join(nav_items)
 
-def create_page(lang, page_name, data, template):
+def create_page(lang, page_name, data, template, photos):
     """Generate HTML page from data"""
     labels = {
         'en': {
@@ -77,7 +89,7 @@ def create_page(lang, page_name, data, template):
         content += '</div>'
 
     # Navigation items
-    nav_items = get_nav_items(lang, page_name)
+    nav_items = get_nav_items(lang, page_name, photos)
 
     # Active states
     life_active = 'font-semibold bg-gray-200 dark:bg-gray-800' if page_name == 'life' else ''
@@ -117,16 +129,24 @@ def main():
     with open('template.html', 'r', encoding='utf-8') as f:
         template = f.read()
 
-    # Create pages from data files
-    data_files = sorted(os.listdir('data'))
-    for file in data_files:
-        if file.endswith('.json'):
-            print(f"  Processing {file}...")
-            with open(f'data/{file}', 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                page_name = file.split('.')[0]
-                create_page('en', page_name, data, template)
-                create_page('de', page_name, data, template)
+    # Load photos from photos.json
+    photos = load_photos()
+
+    # Create life and career pages
+    for page_name in ['life', 'career']:
+        print(f"  Processing {page_name}.json...")
+        with open(f'data/{page_name}.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            create_page('en', page_name, data, template, photos)
+            create_page('de', page_name, data, template, photos)
+
+    # Create photo pages from photos.json (order preserved)
+    print(f"  Processing photos.json...")
+    for item in photos:
+        page_name = slugify(item['title_en'])
+        print(f"    Creating {page_name} pages...")
+        create_page('en', page_name, item, template, photos)
+        create_page('de', page_name, item, template, photos)
 
     # Create index page with language detection
     print("  Creating index page...")
