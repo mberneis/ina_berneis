@@ -3,6 +3,10 @@ import os
 import re
 import unicodedata
 
+def nl2br(text):
+    """Convert newlines to HTML <br> tags"""
+    return text.replace('\n', '<br>')
+
 def slugify(text):
     """Convert text to URL-friendly slug"""
     # Normalize unicode characters (e.g., ö -> o)
@@ -50,7 +54,7 @@ def create_page(lang, page_name, data, template, photos):
         content = '<div class="flex flex-col-reverse mb-12 md:flex-row md:items-start md:gap-8">\n'
         content += '    <div class="flex-1">\n'
         content += f'        <h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
-        content += f'        <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{data[f"description_{lang}"]}</p>\n'
+        content += f'        <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data[f"description_{lang}"])}</p>\n'
         content += '    </div>\n'
         content += '    <div class="w-1/3 mb-6 md:mb-0 shrink-0">\n'
         content += '        <img src="../assets/images/ina.png" alt="Ina Berneis" class="w-full h-auto rounded-lg shadow-lg">\n'
@@ -60,7 +64,7 @@ def create_page(lang, page_name, data, template, photos):
         for event in data["events"]:
             content += '    <div class="timeline-item">\n'
             content += f'        <h2 class="mb-3 text-xl font-bold text-gray-900 md:text-2xl dark:text-gray-100">{event["date"]}</h2>\n'
-            content += f'        <p class="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">{event[f"description_{lang}"]}</p>\n'
+            content += f'        <p class="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(event[f"description_{lang}"])}</p>\n'
             if "photo" in event:
                 content += '        <div class="max-w-md photo-container">\n'
                 content += f'            <img src="../{event["photo"]}" alt="Photo from {event["date"]}" class="w-full h-auto">\n'
@@ -77,13 +81,13 @@ def create_page(lang, page_name, data, template, photos):
             # Use the key as the header (capitalize first letter of each word)
             header = key.replace('_', ' ').title()
             content += f'    <h2 class="mt-8 mb-4 text-2xl font-bold text-gray-900 md:text-3xl dark:text-gray-100">{header}</h2>\n'
-            content += f'    <p class="mb-8 leading-relaxed text-gray-700 dark:text-gray-300">{value}</p>\n'
+            content += f'    <p class="mb-8 leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(value)}</p>\n'
         content += '</div>'
 
     # Create photography pages
     else:
         content = f'<h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
-        content += f'<p class="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{data[f"description_{lang}"]}</p>\n'
+        content += f'<p class="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data[f"description_{lang}"])}</p>\n'
         content += '<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">\n'
         for photo in data["photos"]:
             content += '    <div class="space-y-4">\n'
@@ -91,7 +95,7 @@ def create_page(lang, page_name, data, template, photos):
             content += f'            <img src="../{photo["photo"]}" alt="{data[f"title_{lang}"]}" class="w-full h-auto">\n'
             content += '        </div>\n'
             if f"description_{lang}" in photo:
-                content += f'        <p class="text-sm italic text-gray-600 dark:text-gray-400">{photo[f"description_{lang}"]}</p>\n'
+                content += f'        <p class="text-sm italic text-gray-600 dark:text-gray-400">{nl2br(photo[f"description_{lang}"])}</p>\n'
             content += '    </div>\n'
         content += '</div>'
 
