@@ -47,15 +47,15 @@ def create_page(lang, page_name, data, template, photos):
 
     # Create life page with timeline
     if page_name == 'life':
-        content = f'<h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
-        content += f'<p class="text-lg text-gray-700 dark:text-gray-300 mb-12 leading-relaxed">{data[f"description_{lang}"]}</p>\n'
+        content = f'<h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
+        content += f'<p class="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{data[f"description_{lang}"]}</p>\n'
         content += '<div class="space-y-0">\n'
         for event in data["events"]:
             content += '    <div class="timeline-item">\n'
-            content += f'        <h2 class="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100">{event["date"]}</h2>\n'
-            content += f'        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">{event[f"description_{lang}"]}</p>\n'
+            content += f'        <h2 class="mb-3 text-xl font-bold text-gray-900 md:text-2xl dark:text-gray-100">{event["date"]}</h2>\n'
+            content += f'        <p class="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">{event[f"description_{lang}"]}</p>\n'
             if "photo" in event:
-                content += '        <div class="photo-container max-w-md">\n'
+                content += '        <div class="max-w-md photo-container">\n'
                 content += f'            <img src="../{event["photo"]}" alt="Photo from {event["date"]}" class="w-full h-auto">\n'
                 content += '        </div>\n'
             content += '    </div>\n'
@@ -63,28 +63,28 @@ def create_page(lang, page_name, data, template, photos):
 
     # Create career page
     elif page_name == 'career':
-        content = f'<h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
+        content = f'<h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
         content += '<div class="prose prose-lg dark:prose-invert max-w-none">\n'
         # Iterate over all key/value pairs in content section
         for key, value in data[f"content_{lang}"].items():
             # Use the key as the header (capitalize first letter of each word)
             header = key.replace('_', ' ').title()
-            content += f'    <h2 class="text-3xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">{header}</h2>\n'
-            content += f'    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-8">{value}</p>\n'
+            content += f'    <h2 class="mt-8 mb-4 text-2xl font-bold text-gray-900 md:text-3xl dark:text-gray-100">{header}</h2>\n'
+            content += f'    <p class="mb-8 leading-relaxed text-gray-700 dark:text-gray-300">{value}</p>\n'
         content += '</div>'
 
     # Create photography pages
     else:
-        content = f'<h1 class="text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
-        content += f'<p class="text-lg text-gray-700 dark:text-gray-300 mb-12 leading-relaxed">{data[f"description_{lang}"]}</p>\n'
-        content += '<div class="grid grid-cols-1 md:grid-cols-2 gap-8">\n'
+        content = f'<h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
+        content += f'<p class="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{data[f"description_{lang}"]}</p>\n'
+        content += '<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">\n'
         for photo in data["photos"]:
             content += '    <div class="space-y-4">\n'
             content += '        <div class="photo-container">\n'
             content += f'            <img src="../{photo["photo"]}" alt="{data[f"title_{lang}"]}" class="w-full h-auto">\n'
             content += '        </div>\n'
             if f"description_{lang}" in photo:
-                content += f'        <p class="text-sm text-gray-600 dark:text-gray-400 italic">{photo[f"description_{lang}"]}</p>\n'
+                content += f'        <p class="text-sm italic text-gray-600 dark:text-gray-400">{photo[f"description_{lang}"]}</p>\n'
             content += '    </div>\n'
         content += '</div>'
 
@@ -167,16 +167,16 @@ def main():
         }
     </script>
 </head>
-<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
-    <div class="min-h-screen flex items-center justify-center p-8">
+<body class="text-gray-900 bg-white dark:bg-gray-950 dark:text-gray-100">
+    <div class="flex items-center justify-center min-h-screen p-8">
         <div class="text-center">
-            <h1 class="text-5xl font-bold mb-4">Ina Berneis</h1>
-            <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">Photographer (1927-2003)</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">Redirecting...</p>
-            <p class="text-gray-600 dark:text-gray-400 mb-6">If you are not redirected, please choose your language:</p>
-            <div class="flex gap-4 justify-center">
-                <a href="en/life.html" class="px-6 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors">English</a>
-                <a href="de/life.html" class="px-6 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors">Deutsch</a>
+            <h1 class="mb-4 text-5xl font-bold">Ina Berneis</h1>
+            <p class="mb-8 text-xl text-gray-600 dark:text-gray-400">Photographer (1927-2003)</p>
+            <p class="mb-4 text-gray-600 dark:text-gray-400">Redirecting...</p>
+            <p class="mb-6 text-gray-600 dark:text-gray-400">If you are not redirected, please choose your language:</p>
+            <div class="flex justify-center gap-4">
+                <a href="en/life.html" class="px-6 py-3 text-white transition-colors bg-gray-900 rounded dark:bg-gray-100 dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-300">English</a>
+                <a href="de/life.html" class="px-6 py-3 text-white transition-colors bg-gray-900 rounded dark:bg-gray-100 dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-300">Deutsch</a>
             </div>
         </div>
     </div>
