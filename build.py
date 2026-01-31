@@ -116,13 +116,13 @@ def create_page(lang, page_name, data, template, photos, movies):
             content += '        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>\n'
             content += '    </a>\n'
         content += '</div>\n'
-        content += f'<p class="mb-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data[f"description_{lang}"])}</p>\n'
         if "imdb" in data and data["imdb"]:
-            content += f'<a href="{data["imdb"]}" target="_blank" rel="noopener noreferrer" class="inline-block mb-12">\n'
+            content += f'<a href="{data["imdb"]}" target="_blank" rel="noopener noreferrer" class="inline-block mb-4">\n'
             content += '    <img src="../assets/images/imdb.svg" alt="IMDB" class="h-8">\n'
             content += '</a>\n'
         else:
             content += '<div class="mb-12"></div>\n'
+        content += f'<p class="mb-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data[f"description_{lang}"])}</p>\n'
         content += '<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">\n'
         for photo in data["photos"]:
             content += '    <div class="space-y-4">\n'

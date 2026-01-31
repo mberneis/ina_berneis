@@ -288,6 +288,9 @@
   .hidden {
     display: none;
   }
+  .inline-block {
+    display: inline-block;
+  }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
