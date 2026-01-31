@@ -3,12 +3,27 @@
     "title_en": "Marianne and Juliane (1981)",
     "title_de": "Die bleierne Zeit (1981)",
     "imdb": "https://www.imdb.com/title/tt0082081",
-    "link": "https://www.imdb.com/title/tt0082081",
+    "link": "https://www.filmportal.de/en/movie/die-bleierne-zeit_ea43d4a7928b5006e03053d50b37753d",
     "description_en": "This is one of her most prominent credit in the New German Cinema era.\nShe worked alongside fellow photographer Ralf Tooten.",
     "description_de": "Dies ist eine Ihrer prominentesten Arbeiten in der Ära des Neuen Deutschen Kinos.\nSie arbeitete zusammen mit dem Fotografen Ralf Tooten",
     "photos": [
       {
         "photo": "assets/images/poster_bleierne_zeit.jpg",
+        "description_en": "Movie Poster",
+        "description_de": "Film Plakat."
+      }
+    ]
+    },
+  {
+    "title_en": "Sheer Madness (1983)",
+    "title_de": "Heller Wahn (1983)",
+    "imdb": "https://www.imdb.com/title/tt0085666",
+    "link": "https://www.filmportal.de/en/movie/heller-wahn_ea43d4a6ebca5006e03053d50b37753d",
+    "description_en": "Still Photographer",
+    "description_de": "",
+    "photos": [
+      {
+        "photo": "assets/images/hellerwahn.webp",
         "description_en": "Movie Poster",
         "description_de": "Film Plakat."
       }
