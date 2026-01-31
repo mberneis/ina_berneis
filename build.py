@@ -39,13 +39,15 @@ def create_page(lang, page_name, data, template, photos):
             'life': 'Life',
             'career': 'Career',
             'photography': 'Photography',
-            'photographer': 'Photographer'
+            'photographer': 'Photographer',
+            'photolabel': 'Ina in her 20\'s in Berlin'
         },
         'de': {
             'life': 'Leben',
             'career': 'Karriere',
             'photography': 'Fotografie',
-            'photographer': 'Fotografin'
+            'photographer': 'Fotografin',
+            'photolabel': 'Ina in ihren 20\'er Jahren in Berlin'
         }
     }
 
@@ -58,6 +60,7 @@ def create_page(lang, page_name, data, template, photos):
         content += '    </div>\n'
         content += '    <div class="w-3/4 mb-6 sm:w-1/2 md:w-1/3 md:mb-0 shrink-0">\n'
         content += '        <img src="../assets/images/ina.png" alt="Ina Berneis" class="w-full h-auto rounded-lg shadow-lg">\n'
+        content += f'        <div class="mt-1 text-xs text-center">{labels[lang]["photolabel"]}</div>\n'
         content += '    </div>\n'
         content += '</div>\n'
         content += '<div class="space-y-0">\n'
