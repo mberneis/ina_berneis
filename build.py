@@ -36,14 +36,14 @@ def create_page(lang, page_name, data, template, photos):
     """Generate HTML page from data"""
     labels = {
         'en': {
-            'life': 'Life',
+            'life': 'Biography',
             'career': 'Career',
             'photography': 'Photography',
             'photographer': 'Photographer',
             'photolabel': 'Ina in her 20\'s in Berlin'
         },
         'de': {
-            'life': 'Leben',
+            'life': 'Biographie',
             'career': 'Karriere',
             'photography': 'Fotografie',
             'photographer': 'Fotografin',
@@ -153,8 +153,7 @@ def main():
     photos = load_photos()
 
     # Create life and career pages
-    for page_name in ['life']:
-    # for page_name in ['life', 'career']:
+    for page_name in ['life', 'career']:
         print(f"  Processing {page_name}.json...")
         with open(f'data/{page_name}.json', 'r', encoding='utf-8') as f:
             data = json.load(f)

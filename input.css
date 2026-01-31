@@ -43,6 +43,9 @@
   h1, h2, h3 {
     font-family: var(--font-serif);
   }
+  h2 {
+    @apply text-xl font-semibold
+  }
 }
 
 /* Custom component styles */

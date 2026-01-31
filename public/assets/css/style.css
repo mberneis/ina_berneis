@@ -777,6 +777,12 @@
   h1, h2, h3 {
     font-family: var(--font-serif);
   }
+  h2 {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
 }
 @layer components {
   .nav-link {
