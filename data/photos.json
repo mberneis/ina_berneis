@@ -1,191 +1,236 @@
 [
-    {
-        "title_en": "Marlon Brando",
-        "title_de": "Marlon Brando",
-        "description_en": "Marlon and Ina were neighbors in Beverly Hills and good friends.",
-        "description_de": "Marlon und Ina waren Nachbarn in Beverly Hills und gute Freunde.",
-         "link": "https://en.wikipedia.org/wiki/Marlon_Brando",
-        "photos": [
-            {
-                "photo": "assets/images/MaronBrando1.png",
-                "description_en": "A portrait of Marlon Brando.",
-                "description_de": "Ein Porträt von Marlon Brando"
+  {
+    "title_en": "Marlon Brando",
+    "title_de": "Marlon Brando",
+    "description_en": "Marlon and Ina were neighbors in Beverly Hills and good friends.",
+    "description_de": "Marlon und Ina waren Nachbarn in Beverly Hills und gute Freunde.",
+    "link": "https://en.wikipedia.org/wiki/Marlon_Brando",
+    "photos": [
+      {
+        "photo": "assets/images/MaronBrando1.png",
+        "description_en": "A portrait of Marlon Brando.",
+        "description_de": "Ein Porträt von Marlon Brando"
             },
-            {
-                "photo": "assets/images/MaronBrando2.png",
-                "description_en": "Another portrait of Marlon Brando.",
-                "description_de": "Ein weiteres Porträt von Marlon Brando"
+      {
+        "photo": "assets/images/MaronBrando2.png",
+        "description_en": "Another portrait of Marlon Brando.",
+        "description_de": "Ein weiteres Porträt von Marlon Brando"
             },
-            {
-                "photo": "assets/images/MaronBrando3.png",
-                "description_en": "Marlon Brando and Lisa Lu - movie set 'One-Eyed Jacks'.",
-                "description_de": "Marlon Brando mit Lisa Lu - Filmset 'One-Eyed Jacks'."
+      {
+        "photo": "assets/images/MaronBrando3.png",
+        "description_en": "Marlon Brando and Lisa Lu - movie set 'One-Eyed Jacks'.",
+        "description_de": "Marlon Brando mit Lisa Lu - Filmset 'One-Eyed Jacks'."
             },
-            {
-                "photo": "assets/images/MaronBrando4.png",
-                "description_en": "Marlon Brando with Slim Pickens - movie set 'One-Eyed Jacks'.",
-                "description_de": "Marlon Brando mit Slim Pickens - Filmset 'One-Eyed Jacks'."
+      {
+        "photo": "assets/images/MaronBrando4.png",
+        "description_en": "Marlon Brando with Slim Pickens - movie set 'One-Eyed Jacks'.",
+        "description_de": "Marlon Brando mit Slim Pickens - Filmset 'One-Eyed Jacks'."
             },
-            {
-                "photo": "assets/images/MaronBrando6.png",
-                "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando.",
-                "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando."
+      {
+        "photo": "assets/images/MaronBrando6.png",
+        "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando.",
+        "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando."
             },
-            {
-                "photo": "assets/images/MaronBrando7.png",
-                "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando.",
-                "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando."
+      {
+        "photo": "assets/images/MaronBrando7.png",
+        "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando.",
+        "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando."
             },
-            {
-                "photo": "assets/images/MaronBrando5.png",
-                "description_en": "Ina with her son Michael and Marlon.",
-                "description_de": "Ina mit Ihrem Sohn Michael und Marlon."
+      {
+        "photo": "assets/images/MaronBrando5.png",
+        "description_en": "Ina with her son Michael and Marlon.",
+        "description_de": "Ina mit Ihrem Sohn Michael und Marlon."
             }
         ]
     },
-    {
-        "title_en": "Reiner Schöne",
-        "title_de": "Reiner Schoene",
-        "description_en": "This is a description of the second actor.",
-        "description_de": "Dies ist eine Beschreibung des zweiten Schauspielers.",
-        "photos": [
-            {
-                "photo": "assets/images/dummy.svg",
-                "description_en": "A portrait of Actor 2.",
-                "description_de": "Ein Porträt von Schauspieler 2."
+  {
+    "title_en": "Reiner Schöne",
+    "title_de": "Reiner Schoene",
+    "description_en": "This is a description of the second actor.",
+    "description_de": "Dies ist eine Beschreibung des zweiten Schauspielers.",
+    "photos": [
+      {
+        "photo": "assets/images/dummy.svg",
+        "description_en": "A portrait of Actor 2.",
+        "description_de": "Ein Porträt von Schauspieler 2."
             },
-            {
-                "photo": "assets/images/dummy.svg",
-                "description_en": "Another portrait of Actor 2.",
-                "description_de": "Ein weiteres Porträt von Schauspieler 2."
+      {
+        "photo": "assets/images/dummy.svg",
+        "description_en": "Another portrait of Actor 2.",
+        "description_de": "Ein weiteres Porträt von Schauspieler 2."
             }
         ]
     },
-    {
-        "title_en": "Valeska Gert",
-        "title_de": "Valeska Gert",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
+  {
+    "title_en": "Valeska Gert",
+    "title_de": "Valeska Gert",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
     },
-    {
-        "title_en": "Ursula Andress",
-        "title_de": "Ursula Andress",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
+  {
+    "title_en": "Ursula Andress",
+    "title_de": "Ursula Andress",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
     },
-    {
-        "title_en": "Cary Grant",
-        "title_de": "Cary Grant",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Werner Wunderlich",
-        "title_de": "Werner Wunderlich",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Nancy Kwan",
-        "title_de": "Nancy Kwan",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Warren Beatty",
-        "title_de": "Warren Beatty",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Rock Hudson",
-        "title_de": "Rock Hudson",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Elvis Presley",
-        "title_de": "Elvis Presley",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Tony Curtis",
-        "title_de": "Tony Curtis",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Muhammad Ali",
-        "title_de": "Muhammad Ali",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Klaus Löwitsch",
-        "title_de": "Klaus Löwitsch",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Maximillian Schell",
-        "title_de": "Maximillian Schell",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Kirk Douglas",
-        "title_de": "Kirk Douglas",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Jean Harlow",
-        "title_de": "Jean Harlow",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "John Gavin",
-        "title_de": "John Gavin",
-        "description_en":"",
-        "description_de":"",
-        "photos": []
-    },
-    {
-        "title_en": "Marianne and Juliane",
-        "title_de": "Die bleierne Zeit",
-        "description_en": "This is her most prominent credit in the New German Cinema era. She worked alongside fellow photographer Ralf Tooten.",
-        "description_de": "Dies ist ihre prominenteste Arbeit in der Ära des Neuen Deutschen Kinos. Sie arbeitete zusammen mit dem Fotografen Ralf Tooten",
-        "photos": [
-            {
-                "photo": "assets/images/dummy.svg",
-                "description_en": "A scene from Movie 1.",
-                "description_de": "Eine Szene aus Film 1."
+  {
+    "title_en": "Cary Grant",
+    "title_de": "Cary Grant",
+    "link": "https://en.wikipedia.org/wiki/Cary_Grant",
+    "description_en": "Cary Grant (born Archibald Alec Leach; 18 January 1904 – 29 November 1986) was an English-American actor",
+    "description_de": "",
+    "photos": [{
+        "photo": "assets/images/carygrant01.jpg",
+        "description_en": "Cary Grant with his father",
+        "description_de": ""
             },
-            {
-                "photo": "assets/images/dummy.svg",
-                "description_en": "A scene from Movie 1.",
-                "description_de": "Eine Szene aus Film 1."
+      {
+        "photo": "assets/images/carygrant02.jpg",
+        "description_en": "Cary Grant riding out with Ina",
+        "description_de": ""
+            }
+        ]
+    },
+  {
+    "title_en": "Werner Wunderlich",
+    "title_de": "Werner Wunderlich",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Nancy Kwan",
+    "title_de": "Nancy Kwan",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Warren Beatty",
+    "title_de": "Warren Beatty",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Rock Hudson",
+    "title_de": "Rock Hudson",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Elvis Presley",
+    "title_de": "Elvis Presley",
+    "link": "https://en.wikipedia.org/wiki/Elvis_Presley",
+    "description_en": "Elvis Aaron Presley (January 8, 1935 – August 16, 1977) was an American singer and actor. Referred to as the \"King of Rock and Roll\", he is widely regarded as one of the most culturally significant figures of the 20th century. ",
+    "description_de": "",
+    "photos": [{
+        "photo": "assets/images/ElvisPresley01.png",
+        "description_en": "Ina interviewing Elvis Presley",
+        "description_de": ""
             },
-            {
-                "photo": "assets/images/dummy.svg",
-                "description_en": "Another scene from Movie 1.",
-                "description_de": "Eine weitere Szene aus Film 1."
+      {
+        "photo": "assets/images/ElvisPresley02.png",
+        "description_en": "Ina presenting Elvis with a medal",
+        "description_de": ""
+            }
+        ]
+    },
+  {
+    "title_en": "Tony Curtis",
+    "title_de": "Tony Curtis",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Muhammad Ali",
+    "title_de": "Muhammad Ali",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Klaus Löwitsch",
+    "title_de": "Klaus Löwitsch",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Maximillian Schell",
+    "title_de": "Maximillian Schell",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Kirk Douglas",
+    "title_de": "Kirk Douglas",
+    "description_en": "",
+    "description_de": "",
+    "photos": []
+    },
+  {
+    "title_en": "Rosel Zech",
+    "title_de": "Rosel Zech",
+    "link": "https://en.wikipedia.org/wiki/Rosel_Zech",
+    "description_en": "Rosalie Helga Lina Zech (7 July 1940 – 31 August 2011),[1] known as Rosel Zech, was a German theater and film actress, she is most well known for her works associated with the \"Autorenkino\" (New German Cinema) movement, which began in the 1970s.",
+    "description_de": "",
+    "photos": [
+      {
+        "photo": "assets/images/Rosl_Scan0005.png",
+        "description_en": "Rosel Zech in the 1982 \"Veronica Voss\", 1982 directed by Rainer Werner Fassbinder",
+        "description_de": ""
+    },
+      {
+        "photo": "assets/images/Rosl_Scan0004.png",
+        "description_en": "Rosel Zech in the 1982 \"Veronica Voss\", 1982 directed by Rainer Werner Fassbinder",
+        "description_de": ""
+    },
+      {
+        "photo": "assets/images/Rosl_Scan0001.png",
+        "description_en": "Rosel Zech in the 1982 \"Veronica Voss\", 1982 directed by Rainer Werner Fassbinder",
+        "description_de": ""
+    }
+]
+    },
+  {
+    "title_en": "John Gavin",
+    "title_de": "John Gavin",
+    "link": "https://en.wikipedia.org/wiki/John_Gavin",
+    "description_en": "John Gavin (born Juan Vincent Apablasa; April 8, 1931 – February 9, 2018) was an American actor and diplomat who was the president of the Screen Actors Guild (1971–1973), and the United States Ambassador to Mexico (1981–1986).",
+    "description_de": "",
+    "photos": [{
+      "photo": "assets/images/JohnGavin.png",
+      "description_en": "",
+      "description_de": ""
+    }]
+  },
+  {
+    "title_en": "Marianne and Juliane",
+    "title_de": "Die bleierne Zeit",
+    "link": "https://www.imdb.com/title/tt0082081",
+    "description_en": "This is one of the most prominent credit in the New German Cinema era.\nShe worked alongside fellow photographer Ralf Tooten.",
+    "description_de": "Dies ist eine Ihrer prominentesten Arbeiten in der Ära des Neuen Deutschen Kinos.\nSie arbeitete zusammen mit dem Fotografen Ralf Tooten",
+    "photos": [
+      {
+        "photo": "assets/images/dummy.svg",
+        "description_en": "A scene from Movie 1.",
+        "description_de": "Eine Szene aus Film 1."
+            },
+      {
+        "photo": "assets/images/dummy.svg",
+        "description_en": "A scene from Movie 1.",
+        "description_de": "Eine Szene aus Film 1."
+            },
+      {
+        "photo": "assets/images/dummy.svg",
+        "description_en": "Another scene from Movie 1.",
+        "description_de": "Eine weitere Szene aus Film 1."
             }
         ]
     }
