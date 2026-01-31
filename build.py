@@ -28,7 +28,7 @@ def get_nav_items(lang, current_page, photos):
         page_name = slugify(item['title_en'])
         title = item[f'title_{lang}']
         active_class = 'font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100' if current_page == page_name else ''
-        nav_items.append(f'<li><a href="{page_name}.html" class="nav-link {active_class}">{title}</a></li>')
+        nav_items.append(f'<li><a href="{page_name}.html" class="py-0 text-sm ml-4 nav-link {active_class}">{title}</a></li>')
 
     return '\n                        '.join(nav_items)
 
