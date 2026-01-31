@@ -170,9 +170,14 @@
   {
     "title_en": "Kirk Douglas",
     "title_de": "Kirk Douglas",
-    "description_en": "",
+    "link":"https://en.wikipedia.org/wiki/Kirk_Douglas",
+    "description_en": "Kirk Douglas (born Issur Danielovitch; December 9, 1916 – February 5, 2020) was an American actor and filmmaker. ",
     "description_de": "",
-    "photos": []
+    "photos": [{
+      "photo": "assets/images/Kirk_scan0001.png",
+      "description_en": "",
+      "description_de": ""
+    }]
     },
   {
     "title_en": "Rosel Zech",
@@ -188,6 +193,11 @@
     },
       {
         "photo": "assets/images/Rosl_Scan0004.png",
+        "description_en": "Rosel Zech in the 1982 \"Veronica Voss\", 1982 directed by Rainer Werner Fassbinder",
+        "description_de": ""
+    },
+      {
+        "photo": "assets/images/Rosl_Scan0002.png",
         "description_en": "Rosel Zech in the 1982 \"Veronica Voss\", 1982 directed by Rainer Werner Fassbinder",
         "description_de": ""
     },
