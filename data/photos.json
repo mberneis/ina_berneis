@@ -96,9 +96,18 @@
   {
     "title_en": "Werner Wunderlich",
     "title_de": "Werner Wunderlich",
-    "description_en": "",
+    "link": "https://www.alamy.com/stock-photo/%22werner-wunderlich%22.html?sortBy=relevant",
+    "description_en": "Werner Wunderlich (1930–1991) was a prominent German couturier based in Munich, particularly influential between the 1950s and the 1980s. He was often described by the press of his time as Munich’s \"youngest and strangest\" or most \"extravagant\" designer, known for blending high fashion with traditional Bavarian elements and avant-garde concepts.\n\nHe was also the godfather of Ina's son Michael",
     "description_de": "",
-    "photos": []
+    "photos": [{
+      "photo": "assets/images/werner01.jpg",
+      "description_en": "",
+      "description_de": ""
+    },{
+      "photo": "assets/images/werner02.png",
+      "description_en": "",
+      "description_de": ""
+    }]
     },
   {
     "title_en": "Nancy Kwan",
