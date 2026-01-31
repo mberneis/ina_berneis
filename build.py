@@ -21,6 +21,11 @@ def load_photos():
     with open('data/photos.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def load_movies():
+    """Load all movie entries from movies.json"""
+    with open('data/movies.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
+
 def get_nav_items(lang, current_page, photos):
     """Generate navigation items from photos array (sorted alphabetically)"""
     nav_items = []
@@ -33,13 +38,26 @@ def get_nav_items(lang, current_page, photos):
 
     return '\n                        '.join(nav_items)
 
-def create_page(lang, page_name, data, template, photos):
+def get_movie_nav_items(lang, current_page, movies):
+    """Generate navigation items from movies array (sorted alphabetically)"""
+    nav_items = []
+    sorted_movies = sorted(movies, key=lambda x: x[f'title_{lang}'].lower())
+    for item in sorted_movies:
+        page_name = 'movie-' + slugify(item['title_en'])
+        title = item[f'title_{lang}']
+        active_class = 'font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100' if current_page == page_name else ''
+        nav_items.append(f'<li><a href="{page_name}.html" class="py-0 text-sm ml-4 nav-link {active_class}">{title}</a></li>')
+
+    return '\n                        '.join(nav_items)
+
+def create_page(lang, page_name, data, template, photos, movies):
     """Generate HTML page from data"""
     labels = {
         'en': {
             'life': 'Biography',
             'career': 'Career',
             'photography': 'Photography',
+            'movies': 'Movies',
             'photographer': 'Photographer',
             'photolabel': 'Ina in her 20\'s in Berlin'
         },
@@ -47,6 +65,7 @@ def create_page(lang, page_name, data, template, photos):
             'life': 'Biographie',
             'career': 'Karriere',
             'photography': 'Fotografie',
+            'movies': 'Filme',
             'photographer': 'Fotografin',
             'photolabel': 'Ina in ihren 20\'er Jahren in Berlin'
         }
@@ -88,6 +107,33 @@ def create_page(lang, page_name, data, template, photos):
             content += f'    <p class="mb-8 leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(value)}</p>\n'
         content += '</div>'
 
+    # Create movie pages
+    elif page_name.startswith('movie-'):
+        content = '<div class="flex items-center gap-3 mb-6">\n'
+        content += f'    <h1 class="text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
+        if "link" in data and data["link"]:
+            content += f'    <a href="{data["link"]}" target="_blank" rel="noopener noreferrer" class="text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" title="More information">\n'
+            content += '        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>\n'
+            content += '    </a>\n'
+        content += '</div>\n'
+        content += f'<p class="mb-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data[f"description_{lang}"])}</p>\n'
+        if "imdb" in data and data["imdb"]:
+            content += f'<a href="{data["imdb"]}" target="_blank" rel="noopener noreferrer" class="inline-block mb-12">\n'
+            content += '    <img src="../assets/images/imdb.svg" alt="IMDB" class="h-8">\n'
+            content += '</a>\n'
+        else:
+            content += '<div class="mb-12"></div>\n'
+        content += '<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">\n'
+        for photo in data["photos"]:
+            content += '    <div class="space-y-4">\n'
+            content += '        <div class="photo-container">\n'
+            content += f'            <img src="../{photo["photo"]}" alt="{data[f"title_{lang}"]}" class="w-full h-auto">\n'
+            content += '        </div>\n'
+            if f"description_{lang}" in photo:
+                content += f'        <p class="text-sm italic text-gray-600 dark:text-gray-400">{nl2br(photo[f"description_{lang}"])}</p>\n'
+            content += '    </div>\n'
+        content += '</div>'
+
     # Create photography pages
     else:
         content = '<div class="flex items-center gap-3 mb-6">\n'
@@ -111,6 +157,7 @@ def create_page(lang, page_name, data, template, photos):
 
     # Navigation items
     nav_items = get_nav_items(lang, page_name, photos)
+    movie_nav_items = get_movie_nav_items(lang, page_name, movies)
 
     # Active states
     life_active = 'font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100' if page_name == 'life' else ''
@@ -126,6 +173,7 @@ def create_page(lang, page_name, data, template, photos):
             page_name=page_name,
             css_path="../assets/css/",
             nav_items=nav_items,
+            movie_nav_items=movie_nav_items,
             life_active=life_active,
             career_active=career_active,
             lang_en_active=lang_en_active,
@@ -133,6 +181,7 @@ def create_page(lang, page_name, data, template, photos):
             life_label=labels[lang]['life'],
             career_label=labels[lang]['career'],
             photography_label=labels[lang]['photography'],
+            movies_label=labels[lang]['movies'],
             photographer_label=labels[lang]['photographer']
         ))
 
@@ -150,24 +199,33 @@ def main():
     with open('template.html', 'r', encoding='utf-8') as f:
         template = f.read()
 
-    # Load photos from photos.json
+    # Load photos and movies
     photos = load_photos()
+    movies = load_movies()
 
     # Create life and career pages
     for page_name in ['life', 'career']:
         print(f"  Processing {page_name}.json...")
         with open(f'data/{page_name}.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
-            create_page('en', page_name, data, template, photos)
-            create_page('de', page_name, data, template, photos)
+            create_page('en', page_name, data, template, photos, movies)
+            create_page('de', page_name, data, template, photos, movies)
 
-    # Create photo pages from photos.json (order preserved)
+    # Create photo pages from photos.json
     print(f"  Processing photos.json...")
     for item in photos:
         page_name = slugify(item['title_en'])
         print(f"    Creating {page_name} pages...")
-        create_page('en', page_name, item, template, photos)
-        create_page('de', page_name, item, template, photos)
+        create_page('en', page_name, item, template, photos, movies)
+        create_page('de', page_name, item, template, photos, movies)
+
+    # Create movie pages from movies.json
+    print(f"  Processing movies.json...")
+    for item in movies:
+        page_name = 'movie-' + slugify(item['title_en'])
+        print(f"    Creating {page_name} pages...")
+        create_page('en', page_name, item, template, photos, movies)
+        create_page('de', page_name, item, template, photos, movies)
 
     # Create index page with language detection
     print("  Creating index page...")
