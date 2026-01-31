@@ -2,47 +2,37 @@
   {
     "title_en": "Marianne and Juliane (1981)",
     "title_de": "Die bleierne Zeit (1981)",
-    "imdb":"https://www.imdb.com/title/tt0082081",
+    "imdb": "https://www.imdb.com/title/tt0082081",
     "link": "https://www.imdb.com/title/tt0082081",
-    "description_en": "This is one of the most prominent credit in the New German Cinema era.\nShe worked alongside fellow photographer Ralf Tooten.",
+    "description_en": "This is one of her most prominent credit in the New German Cinema era.\nShe worked alongside fellow photographer Ralf Tooten.",
     "description_de": "Dies ist eine Ihrer prominentesten Arbeiten in der Ära des Neuen Deutschen Kinos.\nSie arbeitete zusammen mit dem Fotografen Ralf Tooten",
     "photos": [
       {
-        "photo": "assets/images/dummy.svg",
-        "description_en": "A scene from Movie 1.",
-        "description_de": "Eine Szene aus Film 1."
-            },
-      {
-        "photo": "assets/images/dummy.svg",
-        "description_en": "Another scene from Movie 1.",
-        "description_de": "Eine weitere Szene aus Film 1."
-            }
-        ]
+        "photo": "assets/images/poster_bleierne_zeit.jpg",
+        "description_en": "Movie Poster",
+        "description_de": "Film Plakat."
+      }
+    ]
     },
   {
     "title_en": "Portrait of Valeska Gert (1977)",
     "title_de": "Nur zum Spaß, nur zum Spiel (1977)",
-    "imdb":"https://www.imdb.com/title/tt0076477",
+    "imdb": "https://www.imdb.com/title/tt0076477",
     "link": "https://schloendorff.deutsches-filminstitut.de/sammlung/kaleidoskop-valeska-gert-fotos-werkfoto-68/",
-    "description_en": "A documentary about the legendary cabaret artist Valeska Gert. Ina's photos from this set are preserved in the <a href='https://schloendorff.deutsches-filminstitut.de/sammlung/kaleidoskop-valeska-gert-fotos-werkfoto-68/' target='_blank'>Volker Schlöndorff Collection</a>.",
+    "description_en": "A documentary about the legendary cabaret artist Valeska Gert.<br> Ina's photos from this set are preserved in the <a target='_blanl' class='text-blue-600 hover:underline' href='https://schloendorff.deutsches-filminstitut.de/sammlung/kaleidoskop-valeska-gert-fotos-werkfoto-68/' target='_blank'>Volker Schlöndorff Collection</a>.",
     "description_de": "",
     "photos": [
       {
-        "photo": "assets/images/dummy.svg",
-        "description_en": "A scene from Movie 1.",
-        "description_de": "Eine Szene aus Film 1."
-            },
-      {
-        "photo": "assets/images/dummy.svg",
-        "description_en": "Another scene from Movie 1.",
-        "description_de": "Eine weitere Szene aus Film 1."
+        "photo": "assets/images/valeska.png",
+        "description_en": "",
+        "description_de": "Ina und Valeska während den Aufnahmen."
             }
         ]
     },
   {
     "title_en": "Uncle Tom's Cabin (1965)",
     "title_de": "Onkel Toms Hütte (1965)",
-    "imdb":"https://www.imdb.com/title/tt0059545",
+    "imdb": "https://www.imdb.com/title/tt0059545",
     "link": "https://www.filmportal.de/node/44085/gallery",
     "description_en": "Ina is credited with the photography for the tie-in book published by Bertelsmann-Lesering in 1965. She was present on the set of the 1965 film adaptation directed by Géza von Radványi to capture production stills.",
     "description_de": "",
@@ -62,20 +52,30 @@
   {
     "title_en": "The Valley of Death (1968)",
     "title_de": "Im Tal der Toten (1968)",
-    "imdb":"https://www.imdb.com/title/tt0063818",
+    "imdb": "https://www.imdb.com/title/tt0063818",
     "link": "https://de.wikipedia.org/wiki/Winnetou_und_Shatterhand_im_Tal_der_Toten",
-    "description_en": "",
+    "description_en": "Set Photography",
     "description_de": "",
     "photos": [
       {
-        "photo": "assets/images/dummy.svg",
-        "description_en": "A scene from Movie 1.",
-        "description_de": "Eine Szene aus Film 1."
+        "photo": "assets/images/poster_imtaldertoten.jpg",
+        "description_en": "Movie Poster",
+        "description_de": "Film Plakat."
+            },
+            {
+              "photo": "assets/images/lexmitsohn.jpg",
+              "description_en": "Lex Barker with his son",
+              "description_de": "Lex Barker mit seinem Sohn."
+                  },
+      {
+        "photo": "assets/images/taldertoten_pierre.jpg",
+        "description_en": "Ina and Pierre Brice",
+        "description_de": "Ina mit Pierre Brice."
             },
       {
-        "photo": "assets/images/dummy.svg",
-        "description_en": "Another scene from Movie 1.",
-        "description_de": "Eine weitere Szene aus Film 1."
+        "photo": "assets/images/lexmitmichael.jpg",
+        "description_en": "Lex Barker with Ina's son Michael",
+        "description_de": "Lex Barker mit Ina's Sohn Michael."
             }
         ]
     }
