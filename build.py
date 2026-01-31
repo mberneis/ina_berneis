@@ -22,9 +22,10 @@ def load_photos():
         return json.load(f)
 
 def get_nav_items(lang, current_page, photos):
-    """Generate navigation items from photos array (order preserved)"""
+    """Generate navigation items from photos array (sorted alphabetically)"""
     nav_items = []
-    for item in photos:
+    sorted_photos = sorted(photos, key=lambda x: x[f'title_{lang}'].lower())
+    for item in sorted_photos:
         page_name = slugify(item['title_en'])
         title = item[f'title_{lang}']
         active_class = 'font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100' if current_page == page_name else ''
