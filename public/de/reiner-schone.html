@@ -31,6 +31,11 @@
     <!-- Mobile Menu Overlay -->
     <div id="menu-overlay" class="fixed inset-0 z-40 hidden md:hidden bg-black/50" aria-hidden="true"></div>
 
+    <!-- Photo Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
     <div class="flex h-full">
         <!-- Vertical Navigation Sidebar -->
         <nav id="sidebar" class="fixed inset-y-0 left-0 z-50 flex flex-col w-64 min-h-screen p-6 transition-transform duration-300 ease-in-out transform -translate-x-full border-r border-gray-200 md:static bg-gray-50 dark:bg-gray-900 dark:border-gray-800 md:translate-x-0">
@@ -69,6 +74,21 @@
                     <ul class="space-y-1">
                         <li><a href="marlon-brando.html" class="nav-link ">Marlon Brando</a></li>
                         <li><a href="reiner-schone.html" class="nav-link font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100">Reiner Schoene</a></li>
+                        <li><a href="valeska-gert.html" class="nav-link ">Valeska Gert</a></li>
+                        <li><a href="ursula-andress.html" class="nav-link ">Ursula Andress</a></li>
+                        <li><a href="cary-grant.html" class="nav-link ">Cary Grant</a></li>
+                        <li><a href="werner-wunderlich.html" class="nav-link ">Werner Wunderlich</a></li>
+                        <li><a href="nancy-kwan.html" class="nav-link ">Nancy Kwan</a></li>
+                        <li><a href="warren-beatty.html" class="nav-link ">Warren Beatty</a></li>
+                        <li><a href="rock-hudson.html" class="nav-link ">Rock Hudson</a></li>
+                        <li><a href="elvis-presley.html" class="nav-link ">Elvis Presley</a></li>
+                        <li><a href="tony-curtis.html" class="nav-link ">Tony Curtis</a></li>
+                        <li><a href="muhammad-ali.html" class="nav-link ">Muhammad Ali</a></li>
+                        <li><a href="klaus-lowitsch.html" class="nav-link ">Klaus Löwitsch</a></li>
+                        <li><a href="maximillian-schell.html" class="nav-link ">Maximillian Schell</a></li>
+                        <li><a href="kirk-douglas.html" class="nav-link ">Kirk Douglas</a></li>
+                        <li><a href="jean-harlow.html" class="nav-link ">Jean Harlow</a></li>
+                        <li><a href="john-gavin.html" class="nav-link ">John Gavin</a></li>
                         <li><a href="marianne-and-juliane.html" class="nav-link ">Die bleierne Zeit</a></li>
                     </ul>
                 </li>
@@ -139,17 +159,62 @@
                 });
             });
 
-            // Close menu on escape key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    closeMenu();
-                }
-            });
-
             // Reset on resize
             window.addEventListener('resize', () => {
                 if (window.innerWidth >= 768) {
                     closeMenu();
+                }
+            });
+        })();
+    </script>
+
+    <!-- Lightbox Script -->
+    <script>
+        (function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            function openLightbox(src, alt) {
+                lightboxImg.src = src;
+                lightboxImg.alt = alt || '';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Click on photo to open lightbox
+            document.querySelectorAll('.photo-container').forEach(container => {
+                container.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    if (img) {
+                        openLightbox(img.src, img.alt);
+                    }
+                });
+            });
+
+            // Click anywhere on lightbox to close
+            lightbox.addEventListener('click', closeLightbox);
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    if (lightbox.classList.contains('active')) {
+                        closeLightbox();
+                    } else {
+                        // Close menu if open
+                        const sidebar = document.getElementById('sidebar');
+                        const menuOverlay = document.getElementById('menu-overlay');
+                        if (!menuOverlay.classList.contains('hidden')) {
+                            sidebar.classList.add('-translate-x-full');
+                            sidebar.classList.remove('translate-x-0');
+                            menuOverlay.classList.add('hidden');
+                            document.body.style.overflow = '';
+                        }
+                    }
                 }
             });
         })();

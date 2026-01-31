@@ -4,7 +4,8 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "build-css": "postcss input.css -o public/assets/css/style.css"
+    "build-css": "postcss input.css -o public/assets/css/style.css",
+    "build": "python3 build.py && yarn run build-css"
   },
   "keywords": [],
   "author": "",
