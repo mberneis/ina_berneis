@@ -89,7 +89,13 @@ def create_page(lang, page_name, data, template, photos):
 
     # Create photography pages
     else:
-        content = f'<h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
+        content = '<div class="flex items-center gap-3 mb-6">\n'
+        content += f'    <h1 class="text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
+        if "link" in data and data["link"]:
+            content += f'    <a href="{data["link"]}" target="_blank" rel="noopener noreferrer" class="text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" title="More information">\n'
+            content += '        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>\n'
+            content += '    </a>\n'
+        content += '</div>\n'
         content += f'<p class="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data[f"description_{lang}"])}</p>\n'
         content += '<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">\n'
         for photo in data["photos"]:

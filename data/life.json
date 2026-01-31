@@ -7,13 +7,18 @@
         {
             "date": "7/1927",
             "description_en": "Born in Berlin, Germany",
-            "description_de": "Geboren in Berlin",
-            "photo": "assets/images/dummy.svg"
+            "description_de": "Geboren in Berlin"
         },
         {
             "date": "1950",
             "description_en": "Started her photography career.",
             "description_de": "Begann ihre Karriere als Fotografin.",
+            "photo": "assets/images/dummy.svg"
+        },
+        {
+            "date": "1957",
+            "description_en": "Her son Michael is born.",
+            "description_de": "Geburt Ihres Sohnes Michael.",
             "photo": "assets/images/dummy.svg"
         },
         {
