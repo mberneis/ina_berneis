@@ -197,7 +197,7 @@ def main():
 </body>
 </html>''')
 
-    print("✓ Build complete! Run 'npm run build-css' to generate CSS.")
+    # print("✓ Build complete! Run 'npm run build-css' to generate CSS.")
 
 
 if __name__ == '__main__':
