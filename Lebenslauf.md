@@ -1,3 +1,9 @@
+---
+noteId: "34dd8750fee311f088af5bb4ab5dc386"
+tags: []
+
+---
+
 # Ina Berneis
 Born: July 16, 1927 (Berlin, Germany)
 Died: May 18, 2003 (New York, USA)
@@ -117,9 +123,6 @@ https://en.wikipedia.org/wiki/Klaus_L%C3%B6witsch
 
 #### Maximillian Schell
 https://en.wikipedia.org/wiki/Maximilian_Schell
-
-#### Jean Harlow
-https://en.wikipedia.org/wiki/Jean_Harlow
 
 #### John Gavin
 https://en.wikipedia.org/wiki/John_Gavin
