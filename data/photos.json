@@ -156,9 +156,18 @@
   {
     "title_en": "Klaus Löwitsch",
     "title_de": "Klaus Löwitsch",
+    "link":"https://de.wikipedia.org/wiki/Klaus_L%C3%B6witsch",
     "description_en": "",
-    "description_de": "",
-    "photos": []
+    "description_de": "Klaus Löwitsch (* 8. April 1936 in Berlin; † 3. Dezember 2002 in München) war ein österreichisch-deutscher Schauspieler. Er galt als bedeutender Charakterdarsteller in Film, Fernsehen und auf der Theaterbühne",
+    "photos": [{
+      "photo": "assets/images/Klaus01.png",
+      "description_en": "",
+      "description_de": ""
+    },{
+      "photo": "assets/images/Klaus02.jpg",
+      "description_en": "",
+      "description_de": ""
+    }]
     },
   {
     "title_en": "Maximillian Schell",
