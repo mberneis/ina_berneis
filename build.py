@@ -56,7 +56,7 @@ def create_page(lang, page_name, data, template, photos):
         content += f'        <h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data[f"title_{lang}"]}</h1>\n'
         content += f'        <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data[f"description_{lang}"])}</p>\n'
         content += '    </div>\n'
-        content += '    <div class="w-1/3 mb-6 md:mb-0 shrink-0">\n'
+        content += '    <div class="w-3/4 mb-6 sm:w-1/2 md:w-1/3 md:mb-0 shrink-0">\n'
         content += '        <img src="../assets/images/ina.png" alt="Ina Berneis" class="w-full h-auto rounded-lg shadow-lg">\n'
         content += '    </div>\n'
         content += '</div>\n'
