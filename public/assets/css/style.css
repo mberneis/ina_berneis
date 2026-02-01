@@ -234,6 +234,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .z-9 {
+    z-index: 9;
+  }
   .z-40 {
     z-index: 40;
   }

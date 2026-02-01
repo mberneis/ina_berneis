@@ -10,10 +10,26 @@
             "description_de": "Geboren in Berlin"
         },
         {
+            "date": "1948",
+            "description_en": "First own appartment",
+            "description_de": "Erste eigene Wohnung"
+        },
+        {
+            "date": "1948",
+            "description_en": "Her own Photo Studio 'InaPhot' - and her first published portrait",
+            "description_de": "Ihr eigenes Foto Studio 'InaPhot' - und Ihr erstes publiziertes Portrait",
+            "photo": "assets/images/firstportrait.png"
+        },
+        {
             "date": "9/1954",
             "description_en": "Married Peter Berneis.",
             "description_de": "Heiratete Peter Berneis.",
             "photo": "assets/images/Ina_Peter.png"
+        },
+        {
+            "date": "1955",
+            "description_en": "Move to the US with roadtrip New York to Los Angels.",
+            "description_de": "Umzug in die USA mit Autofahrt von New York nach Los Angeles."
         },
         {
             "date": "5/1957",
@@ -21,9 +37,19 @@
             "description_de": "Geburt Ihres Sohnes Michael."
         },
         {
-            "date": "3/1963",
+            "date": "1962",
             "description_en": "Divorce from Peter Berneis.",
             "description_de": "Scheidung von Peter Berneis."
+        },
+        {
+            "date": "1962",
+            "description_en": "Move to London for movie project.",
+            "description_de": "Umzug nach London fuer Film Projekt."
+        },
+        {
+            "date": "1963",
+            "description_en": "Move to Munich.",
+            "description_de": "Umzug nach München."
         },
         {
             "date": "5/2023",
