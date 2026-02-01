@@ -10,7 +10,7 @@
             "description_de": "Geboren in Berlin"
         },
         {
-            "date": "1955",
+            "date": "9/1954",
             "description_en": "Married Peter Berneis.",
             "description_de": "Heiratete Peter Berneis.",
             "photo": "assets/images/Ina_Peter.png"
@@ -19,6 +19,11 @@
             "date": "5/1957",
             "description_en": "Her son Michael is born.",
             "description_de": "Geburt Ihres Sohnes Michael."
+        },
+        {
+            "date": "3/1963",
+            "description_en": "Divorce from Peter Berneis.",
+            "description_de": "Scheidung von Peter Berneis."
         },
         {
             "date": "5/2023",
