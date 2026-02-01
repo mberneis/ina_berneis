@@ -46,19 +46,31 @@
   {
     "title_en": "Reiner Schöne",
     "title_de": "Reiner Schoene",
-    "description_en": "This is a description of the second actor.",
-    "description_de": "Dies ist eine Beschreibung des zweiten Schauspielers.",
+    "link":"https://reinerschoene.de/",
+    "description_en": "Reiner Schöne (born 19 January 1942) is a German actor, known for television roles as Dukhat in the series Babylon 5, Esoqq in the Star Trek: The Next Generation episode \"Allegiance\", and Kolitar in the series Sliders, as well as film roles that include Karl Freytag in the Clint Eastwood thriller The Eiger Sanction, Shinnok in Mortal Kombat Annihilation, and Green Goblin and Optimus Prime in the German dubs of the live-action Spider-Man and Transformers film series respectively.\n\nIna and Reiner were in a relationship from 1968 till 1975",
+    "description_de": "",
     "photos": [
       {
-        "photo": "assets/images/dummy.svg",
-        "description_en": "A portrait of Actor 2.",
-        "description_de": "Ein Porträt von Schauspieler 2."
+        "photo": "assets/images/ReinerSchoene/IMG1_0001.jpg",
+        "description_en": "",
+        "description_de": "."
             },
       {
-        "photo": "assets/images/dummy.svg",
-        "description_en": "Another portrait of Actor 2.",
-        "description_de": "Ein weiteres Porträt von Schauspieler 2."
+        "photo": "assets/images/ReinerSchoene/IMG1_0002.jpg",
+        "description_en": "",
+        "description_de": "."
+            },
+      {
+        "photo": "assets/images/ReinerSchoene/IMG1_0148.jpg",
+        "description_en": "",
+        "description_de": "."
+            },
+      {
+        "photo": "assets/images/ReinerSchoene/IMG1_0159.jpg",
+        "description_en": "",
+        "description_de": "."
             }
+
         ]
     },
   {
@@ -71,9 +83,81 @@
   {
     "title_en": "Ursula Andress",
     "title_de": "Ursula Andress",
-    "description_en": "",
+    "link":"https://en.wikipedia.org/wiki/Ursula_Andress",
+    "description_en": "Ursula Andress (born 19 March 1936)[1] is a Swiss actress and former model who has appeared in American, British, and Italian films. Her breakthrough role was as Bond girl Honey Ryder in the first James Bond film, Dr. No (1962).\n\nIna and Ursula were close friends since the 1950's",
     "description_de": "",
-    "photos": []
+    "photos": [
+        {
+      "photo": "assets/images/Ursula/Scan0001_2.png",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0066.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/Scan0019_2.png",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0061.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0064.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0068.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0069.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0065.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0083.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0072.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0074.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0076.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0071.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+        {
+      "photo": "assets/images/Ursula/IMG1_0085.jpg",
+      "description_en": "",
+      "description_de": ""
+    }
+]
     },
   {
     "title_en": "Cary Grant",
@@ -112,9 +196,62 @@
   {
     "title_en": "Nancy Kwan",
     "title_de": "Nancy Kwan",
-    "description_en": "",
+    "link":"https://en.wikipedia.org/wiki/Nancy_Kwan",
+    "description_en": "Nancy Kwan Ka-shen (Chinese: 關家蒨; born May 19, 1939) is a Chinese-American actress whose career benefited from Hollywood's casting of more Asian roles in the 1960s, especially in comedies. She was considered an Eastern sex symbol in the 1960s.",
     "description_de": "",
-    "photos": []
+    "photos": [{
+      "photo": "assets/images/NancyKwan/IMG1_0009.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+{
+      "photo": "assets/images/NancyKwan/IMG1_0012.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+{
+      "photo": "assets/images/NancyKwan/IMG1_0011.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+{
+      "photo": "assets/images/NancyKwan/IMG1_0010.jpg",
+      "description_en": "",
+      "description_de": ""
+    },
+{
+      "photo": "assets/images/NancyKwan/IMG1_0118.jpg",
+      "description_en": "",
+      "description_de": ""
+    },{
+      "photo": "assets/images/NancyKwan/IMG1_0121.jpg",
+      "description_en": "",
+      "description_de": ""
+    },{
+      "photo": "assets/images/NancyKwan/IMG1_0119.jpg",
+      "description_en": "",
+      "description_de": ""
+    },{
+      "photo": "assets/images/NancyKwan/IMG1_0122.jpg",
+      "description_en": "",
+      "description_de": ""
+    },{
+      "photo": "assets/images/NancyKwan/IMG1_0191.jpg",
+      "description_en": "at her wedding with her brother",
+      "description_de": ""
+    },{
+      "photo": "assets/images/NancyKwan/IMG1_0193.jpg",
+      "description_en": "at her wedding with her husband Peter Pock",
+      "description_de": ""
+    },{
+      "photo": "assets/images/NancyKwan/IMG1_0116.jpg",
+      "description_en": "",
+      "description_de": ""
+    },{
+      "photo": "assets/images/NancyKwan/IMG1_0123.jpg",
+      "description_en": "",
+      "description_de": ""
+    }]
     },
   {
     "title_en": "Warren Beatty",
