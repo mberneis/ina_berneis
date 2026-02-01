@@ -73,13 +73,7 @@
 
         ]
     },
-  {
-    "title_en": "Valeska Gert",
-    "title_de": "Valeska Gert",
-    "description_en": "",
-    "description_de": "",
-    "photos": []
-    },
+
   {
     "title_en": "Ursula Andress",
     "title_de": "Ursula Andress",
@@ -149,11 +143,6 @@
     },
       {
         "photo": "assets/images/Ursula/IMG1_0071.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0085.jpg",
         "description_en": "",
         "description_de": ""
     }
@@ -256,16 +245,43 @@
   {
     "title_en": "Warren Beatty",
     "title_de": "Warren Beatty",
-    "description_en": "",
+    "link":"https://en.wikipedia.org/wiki/Warren_Beatty",
+    "description_en": "This picture is a young Warren Beatty, the acclaimed American actor, director, producer, and screenwriter.\nThe image captures him during his early years in Hollywood, around the time of his breakout film roles in the 1960s.",
     "description_de": "",
-    "photos": []
-    },
+ "photos": [
+      {
+        "photo": "assets/images/Warren.jpg",
+        "description_en": "Ina with Warren Beatty",
+        "description_de": ""
+    }
+    ]    },
   {
     "title_en": "Rock Hudson",
     "title_de": "Rock Hudson",
-    "description_en": "",
+    "link": "https://en.wikipedia.org/wiki/Rock_Hudson",
+    "description_en": "He was a top box-office star in the 1950s and 60s, most famous for his \"slapstick\" romantic comedies with Doris Day (like Pillow Talk) and his Oscar-nominated role in the epic drama Giant (1956) alongside Elizabeth Taylor and James Dean.",
     "description_de": "",
-    "photos": []
+    "photos": [
+      {
+        "photo": "assets/images/RockHudson.jpg",
+        "description_en": "Ina presenting a medal to Rock Hudson",
+        "description_de": ""
+    }
+    ]
+    },
+  {
+    "title_en": "Johannes Mario Simmel",
+    "title_de": "Johannes Mario Simmel",
+    "link": "https://de.wikipedia.org/wiki/Johannes_Mario_Simmel",
+    "description_en": "Johannes Mario Simmel (1924–2009) was a highly prolific and successful Austrian writer.\n\nHe was a master of the \"social-problem\" thriller, known for blending suspenseful storytelling with serious critiques of contemporary society, politics, and historical memory (particularly regarding the aftermath of WWII).",
+    "description_de": "",
+    "photos": [
+      {
+        "photo": "assets/images/simmel.png",
+        "description_en": "",
+        "description_de": ""
+    }
+    ]
     },
   {
     "title_en": "Elvis Presley",
@@ -288,9 +304,16 @@
   {
     "title_en": "Tony Curtis",
     "title_de": "Tony Curtis",
-    "description_en": "",
+    "link":"https://en.wikipedia.org/wiki/Tony_Curtis",
+    "description_en": "Tony Curtis (born Bernard Schwartz; June 3, 1925 – September 29, 2010) was an American actor with a career that spanned six decades, achieving the height of his popularity in the 1950s and early 1960s. He acted in more than 100 films, in roles covering a wide range of genres.",
     "description_de": "",
-    "photos": []
+    "photos": [
+      {
+        "photo": "assets/images/TonyCurtis.jpg",
+        "description_en": "Ina with Tony Curtis and Debbie Reynolds at a movie event",
+        "description_de": ""
+    }
+    ]
     },
   {
     "title_en": "Muhammad Ali",
@@ -384,15 +407,24 @@
     }, {
       "photo": "assets/images/Klaus02.jpg",
       "description_en": "",
-      "description_de": ""
+      "description_de": "Ina mit Klaus"
     }]
     },
   {
-    "title_en": "Maximillian Schell",
-    "title_de": "Maximillian Schell",
-    "description_en": "",
+    "title_en": "Klaus Kinski",
+    "title_de": "Klaus Kinski",
+    "link":"https://en.wikipedia.org/wiki/Klaus_Kinski",
+    "description_en": "Without a doubt one of the most intense actors ever to grace the silver screen, Klaus Kinski tapped into his dark inner reaches to deliver a number of spellbinding performances. ",
     "description_de": "",
-    "photos": []
+    "photos": [{
+      "photo": "assets/images/KlausKinski01.png",
+      "description_en": "",
+      "description_de": ""
+    }, {
+      "photo": "assets/images/KlausKinski02.png",
+      "description_en": "Klaus with his daughter",
+      "description_de": "Klaus mit seiner Tochter"
+    }]
     },
   {
     "title_en": "Kirk Douglas",
