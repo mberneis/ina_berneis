@@ -163,6 +163,11 @@
         "photo": "assets/images/carygrant02.jpg",
         "description_en": "Cary Grant riding out with Ina",
         "description_de": ""
+            },
+      {
+        "photo": "assets/images/carygrant03.png",
+        "description_en": "",
+        "description_de": ""
             }
         ]
     },
