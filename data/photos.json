@@ -295,9 +295,21 @@
   {
     "title_en": "Muhammad Ali",
     "title_de": "Muhammad Ali",
-    "description_en": "",
+    "link":"https://en.wikipedia.org/wiki/Muhammad_Ali",
+    "description_en": "Muhammad Ali (born Cassius Marcellus Clay Jr.; January 17, 1942 – June 3, 2016) was an American professional boxer and activist.",
     "description_de": "",
-    "photos": []
+    "photos": [
+         {
+      "photo": "assets/images/MuhammadAli/Scan0014_2.png",
+      "description_en": "",
+      "description_de": ""
+    },
+         {
+      "photo": "assets/images/MuhammadAli/Scan0015_2.png",
+      "description_en": "",
+      "description_de": ""
+    }
+    ]
     },
   {
     "title_en": "Klaus Löwitsch",
