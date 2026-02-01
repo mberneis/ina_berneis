@@ -89,7 +89,7 @@ def create_page(lang, page_name, data, template, photos, movies):
             content += f'        <h2 class="mb-3 text-xl font-bold text-gray-900 md:text-2xl dark:text-gray-100">{event["date"]}</h2>\n'
             content += f'        <p class="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(event[f"description_{lang}"])}</p>\n'
             if "photo" in event:
-                content += '        <div class="max-w-md photo-container">\n'
+                content += '        <div class="w-32 md:w-48 photo-container">\n'
                 content += f'            <img src="../{event["photo"]}" alt="Photo from {event["date"]}" class="w-full h-auto">\n'
                 content += '        </div>\n'
             content += '    </div>\n'

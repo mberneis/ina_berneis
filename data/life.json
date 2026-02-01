@@ -10,22 +10,20 @@
             "description_de": "Geboren in Berlin"
         },
         {
-            "date": "1950",
-            "description_en": "Started her photography career.",
-            "description_de": "Begann ihre Karriere als Fotografin.",
-            "photo": "assets/images/dummy.svg"
+            "date": "1955",
+            "description_en": "Married Peter Berneis.",
+            "description_de": "Heiratete Peter Berneis.",
+            "photo": "assets/images/Ina_Peter.png"
         },
         {
             "date": "5/1957",
             "description_en": "Her son Michael is born.",
-            "description_de": "Geburt Ihres Sohnes Michael.",
-            "photo": "assets/images/dummy.svg"
+            "description_de": "Geburt Ihres Sohnes Michael."
         },
         {
             "date": "5/2023",
             "description_en": "Passed away in New York. Her ashes were dispersed over the Hudson River as per her wish.",
-            "description_de": "Verstorben in New York. Ihre Asche wurde nach Ihrem Wunsch über den Hudson River verstreut",
-            "photo": "assets/images/dummy.svg"
+            "description_de": "Verstorben in New York. Ihre Asche wurde nach Ihrem Wunsch über den Hudson River verstreut"
         }
     ]
 }
