@@ -1,7 +1,7 @@
 [
     {
-        "title_en": "Marianne and Juliane (1981)",
-        "title_de": "Die bleierne Zeit (1981)",
+        "title_en": "(1981) Marianne and Juliane",
+        "title_de": "(1981) Die bleierne Zeit",
         "imdb": "https://www.imdb.com/title/tt0082081",
         "link": "https://www.filmportal.de/en/movie/die-bleierne-zeit_ea43d4a7928b5006e03053d50b37753d",
         "description_en": "This is one of her most prominent credit in the New German Cinema era.\nShe worked alongside fellow photographer Ralf Tooten.",
@@ -15,8 +15,8 @@
         ]
     },
     {
-        "title_en": "Sheer Madness (1983)",
-        "title_de": "Heller Wahn (1983)",
+        "title_en": "(1983) Sheer Madness",
+        "title_de": "(1983) Heller Wahn",
         "imdb": "https://www.imdb.com/title/tt0085666",
         "link": "https://www.filmportal.de/en/movie/heller-wahn_ea43d4a6ebca5006e03053d50b37753d",
         "description_en": "Still Photographer",
@@ -30,8 +30,8 @@
         ]
     },
     {
-        "title_en": "Portrait of Valeska Gert (1977)",
-        "title_de": "Nur zum Spaß, nur zum Spiel (1977)",
+        "title_en": "(1977) Portrait of Valeska Gert",
+        "title_de": "(1977) Nur zum Spaß, nur zum Spiel",
         "imdb": "https://www.imdb.com/title/tt0076477",
         "link": "https://schloendorff.deutsches-filminstitut.de/sammlung/kaleidoskop-valeska-gert-fotos-werkfoto-68/",
         "description_en": "A documentary about the legendary cabaret artist Valeska Gert.<br> Ina's photos from this set are preserved in the <a target='_blank' class='text-blue-600 hover:underline' href='https://schloendorff.deutsches-filminstitut.de/sammlung/kaleidoskop-valeska-gert-fotos-werkfoto-68/'>Volker Schlöndorff Collection</a>.",
@@ -45,8 +45,8 @@
         ]
     },
     {
-        "title_en": "Uncle Tom's Cabin (1965)",
-        "title_de": "Onkel Toms Hütte (1965)",
+        "title_en": "(1965) Uncle Tom's Cabin",
+        "title_de": "(1965) Onkel Toms Hütte",
         "imdb": "https://www.imdb.com/title/tt0059545",
         "link": "https://www.filmportal.de/node/44085/gallery",
         "description_en": "Ina is credited with the photography for the tie-in book published by Bertelsmann-Lesering in 1965. She was present on the set of the 1965 film adaptation directed by Géza von Radványi to capture production stills.",
@@ -60,8 +60,8 @@
         ]
     },
     {
-        "title_en": "The Valley of Death (1968)",
-        "title_de": "Im Tal der Toten (1968)",
+        "title_en": "(1968) The Valley of Death",
+        "title_de": "(1968) Im Tal der Toten",
         "imdb": "https://www.imdb.com/title/tt0063818",
         "link": "https://de.wikipedia.org/wiki/Winnetou_und_Shatterhand_im_Tal_der_Toten",
         "description_en": "Set Photography",
@@ -86,6 +86,21 @@
                 "photo": "assets/images/lexmitmichael.jpg",
                 "description_en": "Lex Barker with Ina's son Michael",
                 "description_de": "Lex Barker mit Ina's Sohn Michael."
+            }
+        ]
+    },
+    {
+        "title_en": "(1949) Der Kahn der fröhlichen Leute",
+        "title_de": "(1949) Der Kahn der fröhlichen Leute",
+        "imdb": "https://www.imdb.com/title/tt0236355/",
+        "link": "https://www.defa-stiftung.de/filme/filme-suchen/der-kahn-der-froehlichen-leute/",
+        "description_en": "Ina played a bride.",
+        "description_de": "Ina hat eine kleine Rolle als Braut.",
+        "photos": [
+            {
+                "photo": "assets/images/csm_KAHN_Plakat_Copyright_DEFA_Stiftung_Kurt_Geffers_cb585948ef.jpg",
+                "description_en": "Movie Poster - Graphic: Kurt Geffers",
+                "description_de": "Film Plakat -  Grafiker: Kurt Geffers"
             }
         ]
     }
