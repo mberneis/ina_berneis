@@ -73,6 +73,46 @@
             "photo": "assets/images/MaronBrando7.png",
             "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando with Ina as maid of honor.",
             "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando mit Ina als Trauzeugin."
+        },
+        {
+            "photo": "assets/images/ina_nancykwan.jpg",
+            "description_en": "Ina with Nancy Kwan.",
+            "description_de": "Ina mit Nancy Kwan."
+        },
+        {
+            "photo": "assets/images/hollywood_1.jpg",
+            "description_en": "",
+            "description_de": ""
+        },
+        {
+            "photo": "assets/images/hollywood_2.jpg",
+            "description_en": "",
+            "description_de": ""
+        },
+        {
+            "photo": "assets/images/hollywood_3.jpg",
+            "description_en": "",
+            "description_de": ""
+        },
+        {
+            "photo": "assets/images/hollywood_4.jpg",
+            "description_en": "",
+            "description_de": ""
+        },
+        {
+            "photo": "assets/images/hollywood_6.jpg",
+            "description_en": "",
+            "description_de": ""
+        },
+        {
+            "photo": "assets/images/hollywood_7.jpg",
+            "description_en": "",
+            "description_de": ""
+        },
+        {
+            "photo": "assets/images/hollywood_8.jpg",
+            "description_en": "",
+            "description_de": ""
         }
     ]
 }
