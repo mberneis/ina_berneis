@@ -21,6 +21,12 @@
             "photo": "assets/images/firstportrait.png"
         },
         {
+            "date": "1952",
+            "description_en": "Shortly enganged to Jan Hendriks.",
+            "description_de": "Kurzzeitig verlobt mit Jan Hendriks.",
+            "photo": "assets/images/JanHendriks.jpg"
+        },
+        {
             "date": "9/1954",
             "description_en": "Married Peter Berneis.",
             "description_de": "Heiratete Peter Berneis.",
@@ -28,8 +34,9 @@
         },
         {
             "date": "1955",
-            "description_en": "Move to the US with roadtrip New York to Los Angels.",
-            "description_de": "Umzug in die USA mit Autofahrt von New York nach Los Angeles."
+            "description_en": "Move to the US with roadtrip New York to Los Angeles.",
+            "description_de": "Umzug in die USA mit Autofahrt von New York nach Los Angeles.",
+            "photo": "assets/images/inapeternewyork.png"
         },
         {
             "date": "5/1957",
