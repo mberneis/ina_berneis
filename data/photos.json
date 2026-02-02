@@ -396,6 +396,69 @@
                 "description_de": "Rosel Zech in \"Die Sehnsucht der Veronika Voss\", 1982, Regie: Rainer Werner Fassbinder"
             }
         ]
+    },    {
+        "title_en": "Mathias Habich",
+        "title_de": "Mathias Habich",
+        "link": "https://en.wikipedia.org/wiki/Matthias_Habich",
+        "description_en": "Matthias Habich (born 12 January 1940) is a German actor who has appeared in more than 110 film and television productions since 1965. Habich was born in Danzig (present-day Gdańsk, Poland) and lives in Paris.",
+        "description_de": "Matthias Habich (* 12. Januar 1940 in Danzig) ist ein deutscher Schauspieler und Hörspielsprecher. Ab 1965 stand er in über 110 Film- und Fernsehproduktionen vor der Kamera und wirkte in etlichen Theaterinszenierungen.",
+        "photos": [
+            {
+                "photo": "assets/images/Habich/IMG1_0101.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0103.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0110.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0106.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0105.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0112.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0104.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0108.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0107.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0109.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Habich/IMG1_0111.jpg",
+                "description_en": "With Margarethe von Trotta",
+                "description_de": "Mit Margarethe von Trotta"
+            }
+        ]
     },
     {
         "title_en": "Gustavo Rojo",
@@ -406,6 +469,198 @@
         "photos": [
             {
                 "photo": "assets/images/JohnGavin.png",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Dieter Lasar",
+        "title_de": "Dieter Lasar",
+        "link": "https://de.wikipedia.org/wiki/Dieter_Laser",
+        "description_en": "Klaus Dieter Laser (17 February 1942 – 29 February 2020) was a German actor.",
+        "description_de": "Klaus Dieter Laser (* 17. Februar 1942 in Kiel; † 29. Februar 2020[1] in Berlin) war ein deutscher Schauspieler.",
+        "photos": [
+            {
+                "photo": "assets/images/Dieter_Laser.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Heidelinde Weiss",
+        "title_de": "Heidelinde Weiss",
+        "link": "https://de.wikipedia.org/wiki/Heidelinde_Weis",
+        "description_en": "Heidelinde Weis (17 September 1940 – 24 November 2023) was an Austrian actress.",
+        "description_de": "Heidelinde Weis (bürgerlich Heidelinde Duna; * 17. September 1940 in Villach in Österreich; † 24. November 2023 ebenda) war eine österreichisch-deutsche Schauspielerin, Regisseurin und Chansonsängerin",
+        "photos": [
+            {
+                "photo": "assets/images/Heidelinde_Weiss.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Oliver Tobias",
+        "title_de": "Oliver Tobias",
+        "link": "https://de.wikipedia.org/wiki/Oliver_Tobias",
+        "description_en": "Oliver Tobias Freitag (born 6 August 1947), known professionally as Oliver Tobias, is a Swiss-born, UK-based film, stage and television actor and director.",
+        "description_de": "Oliver Tobias (* 6. August 1947 in Zürich, Schweiz, als Oliver Tobias Freitag) ist ein britisch-schweizerischer Film- und Theaterschauspieler.",
+        "photos": [
+            {
+                "photo": "assets/images/Oliver_Tobias.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Mario Adorf",
+        "title_de": "Mario Adorf",
+        "link": "https://de.wikipedia.org/wiki/Mario_Adorf",
+        "description_en": "Mario Adorf (born 8 September 1930) is a German actor, considered to be one of the great veteran character actors of European cinema.",
+        "description_de": "Mario Adorf (* 8. September 1930 in Zürich) ist ein deutscher Schauspieler, Hörbuch- und Hörspielsprecher, Synchronsprecher sowie Autor",
+        "photos": [
+            {
+                "photo": "assets/images/Mario_Adorf.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Immy Schell",
+        "title_de": "Immy Schell",
+        "link": "https://de.wikipedia.org/wiki/Immy_Schell",
+        "description_en": "Immaculata „Immy“ Schell (11. Februar 1935 - 14. August 1992) was an austrian actress.",
+        "description_de": "Immaculata „Immy“ Schell (* 11. Februar 1935 in Wien; † 14. August 1992 ebenda) war eine österreichische Schauspielerin.",
+        "photos": [
+            {
+                "photo": "assets/images/Immy Schell.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Irene Mann",
+        "title_de": "Irene Mann",
+        "link": "https://de.wikipedia.org/wiki/Irene_Mann",
+        "description_en": "Irene Mann (1929–1996) was a German dancer, actress and choreographer.",
+        "description_de": "Irene Mann (* 12. April 1929 in Königsberg; † 19. September 1996 in Pfaffenhofen an der Ilm) war eine deutsche Tänzerin, Schauspielerin und Choreografin.",
+        "photos": [
+            {
+                "photo": "assets/images/Irene Mann.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Babett Arens",
+        "title_de": "Babett Arens",
+        "link": "https://de.wikipedia.org/wiki/Babett_Arens",
+        "description_en": "Babett Arens (born July 7, 1959, in Munich) is an Austrian actress and theater director.",
+        "description_de": "Babett Arens (* 7. Juli 1959 in München) ist eine österreichische Schauspielerin und Theaterregisseurin.",
+        "photos": [
+            {
+                "photo": "assets/images/Babett Arens.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Gaby Dohm",
+        "title_de": "Gaby Dohm",
+        "link": "https://de.wikipedia.org/wiki/Gaby_Dohm",
+        "description_en": "Gaby Dohm (born 23 September 1943 in Salzburg) is a German actress.",
+        "description_de": "Gaby Dohm (* 23. September 1943 als Gabriela Helena Anna Dohm in Salzburg) ist eine deutsche Schauspielerin.",
+        "photos": [
+            {
+                "photo": "assets/images/Gaby Dohm.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Hartmut Becker",
+        "title_de": "Hartmut Becker",
+        "link": "https://de.wikipedia.org/wiki/Hartmut_Becker_(Schauspieler)",
+        "description_en": "Hartmut Becker (6 May 1938 – 22 January 2022) was a German actor.",
+        "description_de": "Hartmut Becker (* 6. Mai 1938 in Berlin; † 22. Januar 2022 ebenda)[1] war ein deutscher Schauspieler.",
+        "photos": [
+            {
+                "photo": "assets/images/Hartmut Becker.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Erica Beer",
+        "title_de": "Erica Beer",
+        "link": "https://de.wikipedia.org/wiki/Erica_Beer",
+        "description_en": "Erica Beer (19 January 1925 – 27 December 2013)[1] was a German film actress. She was born in Munich.",
+        "description_de": "Erica Beer (auch Erika; * 19. Januar 1925 in München; † 27. Dezember 2013 in Vaterstetten) war eine deutsche Schauspielerin.",
+        "photos": [
+            {
+                "photo": "assets/images/Erica Beer.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Dieter Kirchlechner",
+        "title_de": "Dieter Kirchlechner",
+        "link": "https://de.wikipedia.org/wiki/Dieter_Kirchlechner",
+        "description_en": "Dieter Kirchlechner (* 21. Januar 1932 in Pinkafeld) is an Austrian actor, author and director.",
+        "description_de": "Dieter Kirchlechner (* 21. Januar 1932 in Pinkafeld) ist ein österreichischer Schauspieler, Drehbuchautor und Regisseur.",
+        "photos": [
+            {
+                "photo": "assets/images/Dieter_Kirchlechner_1.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Dieter_Kirchlechner_2.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+     {
+        "title_en": "Margarethe von Trotta",
+        "title_de": "Margarethe von Trotta",
+        "link": "https://de.wikipedia.org/wiki/Margarethe_von_Trotta",
+        "description_en": "Margarethe von Trotta (born 21 February 1942) is a German film director, screenwriter, and actress. \nSie was a close friend of Ina.",
+        "description_de": "Margarethe von Trotta (* 21. Februar 1942 in Berlin) ist eine deutsche Schauspielerin, Regisseurin und Drehbuchautorin. \nSie war eine enge Freundin von Ina.",
+        "photos": [
+            {
+                "photo": "assets/images/Margarethe von Trotta - 1.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Margarethe von Trotta - 2.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    } ,
+    {
+        "title_en": "Lex Barker",
+        "title_de": "Lex Barker",
+        "link": "https://en.wikipedia.org/wiki/Lex_Barker",
+        "description_en": "Lex with his son",
+        "description_de": "Lex mit seinem Sohn",
+        "photos": [
+            {
+                "photo": "assets/images/lexmitsohn.jpg",
                 "description_en": "",
                 "description_de": ""
             }

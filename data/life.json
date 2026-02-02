@@ -24,7 +24,7 @@
             "date": "1952",
             "description_en": "Shortly enganged to Jan Hendriks.",
             "description_de": "Kurzzeitig verlobt mit Jan Hendriks.",
-            "photo": "assets/images/JanHendriks.jpg"
+            "photo": "assets/images/JanHendriks2.jpg"
         },
         {
             "date": "9/1954",
@@ -66,8 +66,8 @@
         },
         {
             "date": "5/2023",
-            "description_en": "Passed away in New York. Her ashes were dispersed over the Hudson River as per her wish.",
-            "description_de": "Verstorben in New York. Ihre Asche wurde nach Ihrem Wunsch über den Hudson River verstreut"
+            "description_en": "Passed away in New York.",
+            "description_de": "Verstorben in New York."
         }
     ]
 }

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaby Dohm - Ina Berneis</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <script>
+        // Dark mode detection and initialization
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body class="h-full text-gray-900 transition-colors duration-300 bg-white dark:bg-gray-950 dark:text-gray-100">
+    <!-- Mobile Header -->
+    <header class="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-4 py-3 border-b border-gray-200 md:hidden bg-gray-50 dark:bg-gray-900 dark:border-gray-800">
+        <div>
+            <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Ina Berneis</h1>
+            <p class="text-xs text-gray-600 dark:text-gray-400">Fotografin <span class="text-gray-500 dark:text-gray-500">1927 - 2003</span></p>
+        </div>
+        <button id="menu-toggle" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menu-overlay" class="fixed inset-0 z-40 hidden md:hidden bg-black/50" aria-hidden="true"></div>
+
+    <!-- Photo Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <div class="flex h-full">
+        <!-- Vertical Navigation Sidebar -->
+        <nav id="sidebar" class="fixed inset-y-0 left-0 z-50 flex flex-col w-64 min-h-screen p-6 transition-transform duration-300 ease-in-out transform -translate-x-full border-r border-gray-200 md:static bg-gray-50 dark:bg-gray-900 dark:border-gray-800 md:translate-x-0">
+            <!-- Site Title -->
+            <div class="hidden mb-8 md:block">
+                <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-gray-100">Ina Berneis</h1>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Fotografin</p>
+                <p class="mt-1 text-xs text-gray-500 dark:text-gray-500">1927 - 2003</p>
+            </div>
+
+            <!-- Mobile: Close button and spacing -->
+            <div class="flex justify-end mb-4 -mt-2 -mr-2 md:hidden">
+                <button id="menu-close" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Language Switcher -->
+            <div class="flex gap-2 pb-6 mb-8 border-b border-gray-200 dark:border-gray-800">
+                <a href="../en/gaby-dohm.html" class="px-3 py-1 text-sm rounded text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">EN</a>
+                <a href="../de/gaby-dohm.html" class="px-3 py-1 text-sm rounded bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 transition-colors">DE</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="flex-1 space-y-1">
+                <li>
+                    <a href="life.html" class="nav-link ">Biographie</a>
+                </li>
+                <li>
+                    <a href="hollywood.html" class="nav-link ">Hollywood</a>
+                </li>
+                <!-- <li>
+                    <a href="career.html" class="nav-link ">Karriere</a>
+                </li> -->
+                <li class="mt-6">
+                    <h2 class="px-3 mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase dark:text-gray-500">Fotografie</h2>
+                    <ul class="space-y-1">
+                        <li><a href="babett-arens.html" class="py-0 text-sm ml-4 nav-link ">Babett Arens</a></li>
+                        <li><a href="cary-grant.html" class="py-0 text-sm ml-4 nav-link ">Cary Grant</a></li>
+                        <li><a href="dieter-kirchlechner.html" class="py-0 text-sm ml-4 nav-link ">Dieter Kirchlechner</a></li>
+                        <li><a href="dieter-lasar.html" class="py-0 text-sm ml-4 nav-link ">Dieter Lasar</a></li>
+                        <li><a href="erica-beer.html" class="py-0 text-sm ml-4 nav-link ">Erica Beer</a></li>
+                        <li><a href="gaby-dohm.html" class="py-0 text-sm ml-4 nav-link font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100">Gaby Dohm</a></li>
+                        <li><a href="gustavo-rojo.html" class="py-0 text-sm ml-4 nav-link ">Gustavo Rojo</a></li>
+                        <li><a href="hartmut-becker.html" class="py-0 text-sm ml-4 nav-link ">Hartmut Becker</a></li>
+                        <li><a href="heidelinde-weiss.html" class="py-0 text-sm ml-4 nav-link ">Heidelinde Weiss</a></li>
+                        <li><a href="immy-schell.html" class="py-0 text-sm ml-4 nav-link ">Immy Schell</a></li>
+                        <li><a href="irene-mann.html" class="py-0 text-sm ml-4 nav-link ">Irene Mann</a></li>
+                        <li><a href="johannes-mario-simmel.html" class="py-0 text-sm ml-4 nav-link ">Johannes Mario Simmel</a></li>
+                        <li><a href="kirk-douglas.html" class="py-0 text-sm ml-4 nav-link ">Kirk Douglas</a></li>
+                        <li><a href="klaus-kinski.html" class="py-0 text-sm ml-4 nav-link ">Klaus Kinski</a></li>
+                        <li><a href="klaus-lowitsch.html" class="py-0 text-sm ml-4 nav-link ">Klaus Löwitsch</a></li>
+                        <li><a href="lex-barker.html" class="py-0 text-sm ml-4 nav-link ">Lex Barker</a></li>
+                        <li><a href="margarethe-von-trotta.html" class="py-0 text-sm ml-4 nav-link ">Margarethe von Trotta</a></li>
+                        <li><a href="mario-adorf.html" class="py-0 text-sm ml-4 nav-link ">Mario Adorf</a></li>
+                        <li><a href="marlon-brando.html" class="py-0 text-sm ml-4 nav-link ">Marlon Brando</a></li>
+                        <li><a href="mathias-habich.html" class="py-0 text-sm ml-4 nav-link ">Mathias Habich</a></li>
+                        <li><a href="muhammad-ali.html" class="py-0 text-sm ml-4 nav-link ">Muhammad Ali</a></li>
+                        <li><a href="nancy-kwan.html" class="py-0 text-sm ml-4 nav-link ">Nancy Kwan</a></li>
+                        <li><a href="oliver-tobias.html" class="py-0 text-sm ml-4 nav-link ">Oliver Tobias</a></li>
+                        <li><a href="reiner-schoene.html" class="py-0 text-sm ml-4 nav-link ">Reiner Schöne</a></li>
+                        <li><a href="rosel-zech.html" class="py-0 text-sm ml-4 nav-link ">Rosel Zech</a></li>
+                        <li><a href="ursula-andress.html" class="py-0 text-sm ml-4 nav-link ">Ursula Andress</a></li>
+                        <li><a href="werner-wunderlich.html" class="py-0 text-sm ml-4 nav-link ">Werner Wunderlich</a></li>
+                    </ul>
+                </li>
+                <li class="mt-6">
+                    <h2 class="px-3 mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase dark:text-gray-500">Filme</h2>
+                    <ul class="space-y-1">
+                        <li><a href="movie-marianne-and-juliane-1981.html" class="py-0 text-sm ml-4 nav-link ">Die bleierne Zeit (1981)</a></li>
+                        <li><a href="movie-sheer-madness-1983.html" class="py-0 text-sm ml-4 nav-link ">Heller Wahn (1983)</a></li>
+                        <li><a href="movie-the-valley-of-death-1968.html" class="py-0 text-sm ml-4 nav-link ">Im Tal der Toten (1968)</a></li>
+                        <li><a href="movie-portrait-of-valeska-gert-1977.html" class="py-0 text-sm ml-4 nav-link ">Nur zum Spaß, nur zum Spiel (1977)</a></li>
+                        <li><a href="movie-uncle-toms-cabin-1965.html" class="py-0 text-sm ml-4 nav-link ">Onkel Toms Hütte (1965)</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Footer -->
+            <div class="pt-6 mt-8 border-t border-gray-200 dark:border-gray-800">
+                <p class="text-xs text-gray-500 dark:text-gray-500">&copy; <span id="copyright-year"></span> Estate of Ina Berneis</p>
+                <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 pt-16 overflow-y-auto md:pt-0">
+            <div class="max-w-5xl px-4 py-8 mx-auto md:px-8 md:py-12">
+                <div class="flex items-center gap-3 mb-6">
+    <h1 class="text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">Gaby Dohm</h1>
+    <a href="https://de.wikipedia.org/wiki/Gaby_Dohm" target="_blank" rel="noopener noreferrer" class="text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" title="More information">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    </a>
+</div>
+<p class="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300">Gaby Dohm (* 23. September 1943 als Gabriela Helena Anna Dohm in Salzburg) ist eine deutsche Schauspielerin.</p>
+<div class="flex justify-center">
+    <div class="space-y-4 w-full lg:w-1/2">
+        <div class="photo-container">
+            <img src="../assets/images/Gaby Dohm.jpg" alt="Gaby Dohm" class="w-full h-auto">
+        </div>
+        <p class="text-sm italic text-gray-600 dark:text-gray-400"></p>
+    </div>
+</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        (function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const menuOverlay = document.getElementById('menu-overlay');
+            const sidebar = document.getElementById('sidebar');
+
+            function openMenu() {
+                sidebar.classList.remove('-translate-x-full');
+                sidebar.classList.add('translate-x-0');
+                menuOverlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                sidebar.classList.add('-translate-x-full');
+                sidebar.classList.remove('translate-x-0');
+                menuOverlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+
+            menuToggle.addEventListener('click', openMenu);
+            menuClose.addEventListener('click', closeMenu);
+            menuOverlay.addEventListener('click', closeMenu);
+
+            // Close menu on navigation link click (mobile)
+            sidebar.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 768) {
+                        closeMenu();
+                    }
+                });
+            });
+
+            // Reset on resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) {
+                    closeMenu();
+                }
+            });
+        })();
+    </script>
+
+    <!-- Lightbox Script -->
+    <script>
+        (function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            function openLightbox(src, alt) {
+                lightboxImg.src = src;
+                lightboxImg.alt = alt || '';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Click on photo to open lightbox
+            document.querySelectorAll('.photo-container').forEach(container => {
+                container.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    if (img) {
+                        openLightbox(img.src, img.alt);
+                    }
+                });
+            });
+
+            // Click anywhere on lightbox to close
+            lightbox.addEventListener('click', closeLightbox);
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    if (lightbox.classList.contains('active')) {
+                        closeLightbox();
+                    } else {
+                        // Close menu if open
+                        const sidebar = document.getElementById('sidebar');
+                        const menuOverlay = document.getElementById('menu-overlay');
+                        if (!menuOverlay.classList.contains('hidden')) {
+                            sidebar.classList.add('-translate-x-full');
+                            sidebar.classList.remove('translate-x-0');
+                            menuOverlay.classList.add('hidden');
+                            document.body.style.overflow = '';
+                        }
+                    }
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

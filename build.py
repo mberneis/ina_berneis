@@ -151,16 +151,30 @@ def create_page(lang, page_name, data, template, photos, movies, hollywood=None)
             content += '    </a>\n'
         content += '</div>\n'
         content += f'<p class="mb-12 text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data[f"description_{lang}"])}</p>\n'
-        content += '<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">\n'
-        for photo in data["photos"]:
-            content += '    <div class="space-y-4">\n'
+        if len(data["photos"]) == 1:
+            # Single image: center it under the description
+            photo = data["photos"][0]
+            content += '<div class="flex justify-center">\n'
+            content += '    <div class="space-y-4 w-full lg:w-1/2">\n'
             content += '        <div class="photo-container">\n'
             content += f'            <img src="../{photo["photo"]}" alt="{data[f"title_{lang}"]}" class="w-full h-auto">\n'
             content += '        </div>\n'
             if f"description_{lang}" in photo:
                 content += f'        <p class="text-sm italic text-gray-600 dark:text-gray-400">{nl2br(photo[f"description_{lang}"])}</p>\n'
             content += '    </div>\n'
-        content += '</div>'
+            content += '</div>'
+        else:
+            # Multiple images: use grid layout
+            content += '<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">\n'
+            for photo in data["photos"]:
+                content += '    <div class="space-y-4">\n'
+                content += '        <div class="photo-container">\n'
+                content += f'            <img src="../{photo["photo"]}" alt="{data[f"title_{lang}"]}" class="w-full h-auto">\n'
+                content += '        </div>\n'
+                if f"description_{lang}" in photo:
+                    content += f'        <p class="text-sm italic text-gray-600 dark:text-gray-400">{nl2br(photo[f"description_{lang}"])}</p>\n'
+                content += '    </div>\n'
+            content += '</div>'
 
     # Navigation items
     nav_items = get_nav_items(lang, page_name, photos)
