@@ -1,409 +1,419 @@
 [
-  {
-    "title_en": "Marlon Brando",
-    "title_de": "Marlon Brando",
-    "description_en": "Marlon and Ina were neighbors in Beverly Hills and good friends.",
-    "description_de": "Marlon und Ina waren Nachbarn in Beverly Hills und gute Freunde.",
-    "link": "https://en.wikipedia.org/wiki/Marlon_Brando",
-    "photos": [
-      {
-        "photo": "assets/images/MaronBrando1.png",
-        "description_en": "A portrait of Marlon Brando.",
-        "description_de": "Ein Porträt von Marlon Brando"
+    {
+        "title_en": "Marlon Brando",
+        "title_de": "Marlon Brando",
+        "description_en": "Marlon and Ina were neighbors in Beverly Hills and good friends.",
+        "description_de": "Marlon und Ina waren Nachbarn in Beverly Hills und gute Freunde.",
+        "link": "https://en.wikipedia.org/wiki/Marlon_Brando",
+        "photos": [
+            {
+                "photo": "assets/images/MaronBrando1.png",
+                "description_en": "A portrait of Marlon Brando.",
+                "description_de": "Ein Porträt von Marlon Brando"
             },
-      {
-        "photo": "assets/images/MaronBrando2.png",
-        "description_en": "Another portrait of Marlon Brando.",
-        "description_de": "Ein weiteres Porträt von Marlon Brando"
+            {
+                "photo": "assets/images/MaronBrando2.png",
+                "description_en": "Another portrait of Marlon Brando.",
+                "description_de": "Ein weiteres Porträt von Marlon Brando"
             },
-      {
-        "photo": "assets/images/MaronBrando3.png",
-        "description_en": "Marlon Brando and Lisa Lu - movie set 'One-Eyed Jacks'.",
-        "description_de": "Marlon Brando mit Lisa Lu - Filmset 'One-Eyed Jacks'."
+            {
+                "photo": "assets/images/MaronBrando3.png",
+                "description_en": "Marlon Brando and Lisa Lu - movie set 'One-Eyed Jacks'.",
+                "description_de": "Marlon Brando mit Lisa Lu - Filmset 'One-Eyed Jacks'."
             },
-      {
-        "photo": "assets/images/MaronBrando4.png",
-        "description_en": "Marlon Brando with Slim Pickens - movie set 'One-Eyed Jacks'.",
-        "description_de": "Marlon Brando mit Slim Pickens - Filmset 'One-Eyed Jacks'."
-            }
-
-        ]
-    },
-  {
-    "title_en": "Reiner Schoene",
-    "title_de": "Reiner Schöne",
-    "link": "https://reinerschoene.de/",
-    "description_en": "Reiner Schöne (born 19 January 1942) is a German actor, known for television roles as Dukhat in the series Babylon 5, Esoqq in the Star Trek: The Next Generation episode \"Allegiance\", and Kolitar in the series Sliders, as well as film roles that include Karl Freytag in the Clint Eastwood thriller The Eiger Sanction, Shinnok in Mortal Kombat Annihilation, and Green Goblin and Optimus Prime in the German dubs of the live-action Spider-Man and Transformers film series respectively.\n\nIna and Reiner were in a relationship from 1968 till 1975",
-    "description_de": "Reiner Schöne (* 19. Januar 1942) ist ein deutscher Schauspieler, bekannt für Fernsehrollen als Dukhat in der Serie Babylon 5, Esoqq in der Star Trek: The Next Generation-Episode \"Allegiance\" und Kolitar in der Serie Sliders, sowie für Filmrollen wie Karl Freytag in dem Clint-Eastwood-Thriller Kennwort: Iger, Shinnok in Mortal Kombat Annihilation und als deutsche Synchronstimme von Green Goblin und Optimus Prime in den Spider-Man- und Transformers-Filmreihen.\n\nIna und Reiner waren von 1968 bis 1975 ein Paar.",
-    "photos": [
-      {
-        "photo": "assets/images/ReinerSchoene/IMG1_0001.jpg",
-        "description_en": "",
-        "description_de": "."
-            },
-      {
-        "photo": "assets/images/ReinerSchoene/IMG1_0002.jpg",
-        "description_en": "",
-        "description_de": "."
-            },
-      {
-        "photo": "assets/images/ReinerSchoene/IMG1_0148.jpg",
-        "description_en": "",
-        "description_de": "."
-            },
-      {
-        "photo": "assets/images/ReinerSchoene/IMG1_0159.jpg",
-        "description_en": "",
-        "description_de": "."
-            }
-
-        ]
-    },
-
-  {
-    "title_en": "Ursula Andress",
-    "title_de": "Ursula Andress",
-    "link": "https://en.wikipedia.org/wiki/Ursula_Andress",
-    "description_en": "Ursula Andress (born 19 March 1936) is a Swiss actress and former model who has appeared in American, British, and Italian films. Her breakthrough role was as Bond girl Honey Ryder in the first James Bond film, Dr. No (1962).\n\nIna and Ursula were close friends since the 1950's",
-    "description_de": "Ursula Andress (* 19. März 1936) ist eine Schweizer Schauspielerin und ehemaliges Model, die in amerikanischen, britischen und italienischen Filmen mitgewirkt hat. Ihre Durchbruchsrolle war als Bond-Girl Honey Ryder im ersten James-Bond-Film Dr. No (1962).\n\nIna und Ursula waren seit den 1950er Jahren enge Freundinnen.",
-    "photos": [
-
-      {
-        "photo": "assets/images/Ursula/Scan0019_2.png",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0061.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0064.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0068.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0069.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0065.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0083.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0072.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0074.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0076.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Ursula/IMG1_0071.jpg",
-        "description_en": "",
-        "description_de": ""
-    }
-]
-    },
-  {
-    "title_en": "Cary Grant",
-    "title_de": "Cary Grant",
-    "link": "https://en.wikipedia.org/wiki/Cary_Grant",
-    "description_en": "Cary Grant (born Archibald Alec Leach; 18 January 1904 – 29 November 1986) was an English-American actor",
-    "description_de": "Cary Grant (geboren als Archibald Alec Leach; 18. Januar 1904 – 29. November 1986) war ein englisch-amerikanischer Schauspieler.",
-    "photos": [{
-        "photo": "assets/images/carygrant01.jpg",
-        "description_en": "Cary Grant with his father",
-        "description_de": "Cary Grant mit seinem Vater"
-            },
-      {
-        "photo": "assets/images/carygrant03.png",
-        "description_en": "",
-        "description_de": ""
+            {
+                "photo": "assets/images/MaronBrando4.png",
+                "description_en": "Marlon Brando with Slim Pickens - movie set 'One-Eyed Jacks'.",
+                "description_de": "Marlon Brando mit Slim Pickens - Filmset 'One-Eyed Jacks'."
             }
         ]
     },
-  {
-    "title_en": "Werner Wunderlich",
-    "title_de": "Werner Wunderlich",
-    "link": "https://www.alamy.com/stock-photo/%22werner-wunderlich%22.html?sortBy=relevant",
-    "description_en": "Werner Wunderlich (1930–1991) was a prominent German couturier based in Munich, particularly influential between the 1950s and the 1980s. He was often described by the press of his time as Munich's \"youngest and strangest\" or most \"extravagant\" designer, known for blending high fashion with traditional Bavarian elements and avant-garde concepts.\n\nHe was also the godfather of Ina's son Michael",
-    "description_de": "Werner Wunderlich (1930–1991) war ein bedeutender deutscher Modeschöpfer mit Sitz in München, besonders einflussreich zwischen den 1950er und 1980er Jahren. Er wurde von der Presse seiner Zeit oft als Münchens \"jüngster und seltsamster\" oder \"extravagantester\" Designer beschrieben, bekannt für die Verbindung von Haute Couture mit traditionellen bayerischen Elementen und avantgardistischen Konzepten.\n\nEr war auch der Taufpate von Inas Sohn Michael.",
-    "photos": [{
-        "photo": "assets/images/werner01.jpg",
-        "description_en": "",
-        "description_de": ""
-    }, {
-        "photo": "assets/images/werner02.png",
-        "description_en": "",
-        "description_de": ""
+    {
+        "title_en": "Reiner Schoene",
+        "title_de": "Reiner Schöne",
+        "link": "https://reinerschoene.de/",
+        "description_en": "Reiner Schöne (born 19 January 1942) is a German actor, known for television roles as Dukhat in the series Babylon 5, Esoqq in the Star Trek: The Next Generation episode \"Allegiance\", and Kolitar in the series Sliders, as well as film roles that include Karl Freytag in the Clint Eastwood thriller The Eiger Sanction, Shinnok in Mortal Kombat Annihilation, and Green Goblin and Optimus Prime in the German dubs of the live-action Spider-Man and Transformers film series respectively.\n\nIna and Reiner were in a relationship from 1968 till 1975",
+        "description_de": "Reiner Schöne (* 19. Januar 1942) ist ein deutscher Schauspieler, bekannt für Fernsehrollen als Dukhat in der Serie Babylon 5, Esoqq in der Star Trek: The Next Generation-Episode \"Allegiance\" und Kolitar in der Serie Sliders, sowie für Filmrollen wie Karl Freytag in dem Clint-Eastwood-Thriller Kennwort: Iger, Shinnok in Mortal Kombat Annihilation und als deutsche Synchronstimme von Green Goblin und Optimus Prime in den Spider-Man- und Transformers-Filmreihen.\n\nIna und Reiner waren von 1968 bis 1975 ein Paar.",
+        "photos": [
+            {
+                "photo": "assets/images/ReinerSchoene/IMG1_0001.jpg",
+                "description_en": "",
+                "description_de": "."
+            },
+            {
+                "photo": "assets/images/ReinerSchoene/IMG1_0002.jpg",
+                "description_en": "",
+                "description_de": "."
+            },
+            {
+                "photo": "assets/images/ReinerSchoene/IMG1_0148.jpg",
+                "description_en": "",
+                "description_de": "."
+            },
+            {
+                "photo": "assets/images/ReinerSchoene/IMG1_0159.jpg",
+                "description_en": "",
+                "description_de": "."
+            }
+        ]
     },
-      {
-        "photo": "assets/images/werner03.jpg",
-        "description_en": "",
-        "description_de": ""
-    }]
+    {
+        "title_en": "Ursula Andress",
+        "title_de": "Ursula Andress",
+        "link": "https://en.wikipedia.org/wiki/Ursula_Andress",
+        "description_en": "Ursula Andress (born 19 March 1936) is a Swiss actress and former model who has appeared in American, British, and Italian films. Her breakthrough role was as Bond girl Honey Ryder in the first James Bond film, Dr. No (1962).\n\nIna and Ursula were close friends since the 1950's",
+        "description_de": "Ursula Andress (* 19. März 1936) ist eine Schweizer Schauspielerin und ehemaliges Model, die in amerikanischen, britischen und italienischen Filmen mitgewirkt hat. Ihre Durchbruchsrolle war als Bond-Girl Honey Ryder im ersten James-Bond-Film Dr. No (1962).\n\nIna und Ursula waren seit den 1950er Jahren enge Freundinnen.",
+        "photos": [
+            {
+                "photo": "assets/images/Ursula/Scan0019_2.png",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0061.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0064.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0068.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0069.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0065.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0083.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0072.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0074.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0076.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Ursula/IMG1_0071.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
     },
-  {
-    "title_en": "Nancy Kwan",
-    "title_de": "Nancy Kwan",
-    "link": "https://en.wikipedia.org/wiki/Nancy_Kwan",
-    "description_en": "Nancy Kwan Ka-shen (Chinese: 關家蒨; born May 19, 1939) is a Chinese-American actress whose career benefited from Hollywood's casting of more Asian roles in the 1960s, especially in comedies. She was considered an Eastern sex symbol in the 1960s.",
-    "description_de": "Nancy Kwan Ka-shen (chinesisch: 關家蒨; geboren am 19. Mai 1939) ist eine chinesisch-amerikanische Schauspielerin, deren Karriere von Hollywoods verstärkter Besetzung asiatischer Rollen in den 1960er Jahren profitierte, insbesondere in Komödien. Sie galt in den 1960er Jahren als östliches Sexsymbol.",
-    "photos": [{
-        "photo": "assets/images/NancyKwan/IMG1_0009.jpg",
-        "description_en": "",
-        "description_de": ""
+    {
+        "title_en": "Cary Grant",
+        "title_de": "Cary Grant",
+        "link": "https://en.wikipedia.org/wiki/Cary_Grant",
+        "description_en": "Cary Grant (born Archibald Alec Leach; 18 January 1904 – 29 November 1986) was an English-American actor",
+        "description_de": "Cary Grant (geboren als Archibald Alec Leach; 18. Januar 1904 – 29. November 1986) war ein englisch-amerikanischer Schauspieler.",
+        "photos": [
+            {
+                "photo": "assets/images/carygrant01.jpg",
+                "description_en": "Cary Grant with his father",
+                "description_de": "Cary Grant mit seinem Vater"
+            },
+            {
+                "photo": "assets/images/carygrant03.png",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
     },
-      {
-        "photo": "assets/images/NancyKwan/IMG1_0012.jpg",
-        "description_en": "",
-        "description_de": ""
+    {
+        "title_en": "Werner Wunderlich",
+        "title_de": "Werner Wunderlich",
+        "link": "https://www.alamy.com/stock-photo/%22werner-wunderlich%22.html?sortBy=relevant",
+        "description_en": "Werner Wunderlich (1930–1991) was a prominent German couturier based in Munich, particularly influential between the 1950s and the 1980s. He was often described by the press of his time as Munich's \"youngest and strangest\" or most \"extravagant\" designer, known for blending high fashion with traditional Bavarian elements and avant-garde concepts.\n\nHe was also the godfather of Ina's son Michael",
+        "description_de": "Werner Wunderlich (1930–1991) war ein bedeutender deutscher Modeschöpfer mit Sitz in München, besonders einflussreich zwischen den 1950er und 1980er Jahren. Er wurde von der Presse seiner Zeit oft als Münchens \"jüngster und seltsamster\" oder \"extravagantester\" Designer beschrieben, bekannt für die Verbindung von Haute Couture mit traditionellen bayerischen Elementen und avantgardistischen Konzepten.\n\nEr war auch der Taufpate von Inas Sohn Michael.",
+        "photos": [
+            {
+                "photo": "assets/images/werner01.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/werner02.png",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/werner03.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
     },
-      {
-        "photo": "assets/images/NancyKwan/IMG1_0011.jpg",
-        "description_en": "",
-        "description_de": ""
+    {
+        "title_en": "Nancy Kwan",
+        "title_de": "Nancy Kwan",
+        "link": "https://en.wikipedia.org/wiki/Nancy_Kwan",
+        "description_en": "Nancy Kwan Ka-shen (Chinese: 關家蒨; born May 19, 1939) is a Chinese-American actress whose career benefited from Hollywood's casting of more Asian roles in the 1960s, especially in comedies. She was considered an Eastern sex symbol in the 1960s.",
+        "description_de": "Nancy Kwan Ka-shen (chinesisch: 關家蒨; geboren am 19. Mai 1939) ist eine chinesisch-amerikanische Schauspielerin, deren Karriere von Hollywoods verstärkter Besetzung asiatischer Rollen in den 1960er Jahren profitierte, insbesondere in Komödien. Sie galt in den 1960er Jahren als östliches Sexsymbol.",
+        "photos": [
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0009.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0012.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0011.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0010.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0118.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0121.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0119.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0122.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0116.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/NancyKwan/IMG1_0123.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
     },
-      {
-        "photo": "assets/images/NancyKwan/IMG1_0010.jpg",
-        "description_en": "",
-        "description_de": ""
+    {
+        "title_en": "Johannes Mario Simmel",
+        "title_de": "Johannes Mario Simmel",
+        "link": "https://de.wikipedia.org/wiki/Johannes_Mario_Simmel",
+        "description_en": "Johannes Mario Simmel (1924–2009) was a highly prolific and successful Austrian writer.",
+        "description_de": "Johannes Mario Simmel (1924–2009) war ein äußerst produktiver und erfolgreicher österreichischer Schriftsteller.",
+        "photos": [
+            {
+                "photo": "assets/images/simmel.png",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
     },
-      {
-        "photo": "assets/images/NancyKwan/IMG1_0118.jpg",
-        "description_en": "",
-        "description_de": ""
-    }, {
-        "photo": "assets/images/NancyKwan/IMG1_0121.jpg",
-        "description_en": "",
-        "description_de": ""
-    }, {
-        "photo": "assets/images/NancyKwan/IMG1_0119.jpg",
-        "description_en": "",
-        "description_de": ""
-    }, {
-        "photo": "assets/images/NancyKwan/IMG1_0122.jpg",
-        "description_en": "",
-        "description_de": ""
-    }, {
-        "photo": "assets/images/NancyKwan/IMG1_0116.jpg",
-        "description_en": "",
-        "description_de": ""
-    }, {
-        "photo": "assets/images/NancyKwan/IMG1_0123.jpg",
-        "description_en": "",
-        "description_de": ""
-    }]
+    {
+        "title_en": "Muhammad Ali",
+        "title_de": "Muhammad Ali",
+        "link": "https://en.wikipedia.org/wiki/Muhammad_Ali",
+        "description_en": "Muhammad Ali (born Cassius Marcellus Clay Jr.; January 17, 1942 – June 3, 2016) was an American professional boxer and activist.",
+        "description_de": "Muhammad Ali (geboren als Cassius Marcellus Clay Jr.; 17. Januar 1942 – 3. Juni 2016) war ein amerikanischer Profiboxer und Aktivist.",
+        "photos": [
+            {
+                "photo": "assets/images/MuhammadAli/Scan0014.png",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0089.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0090.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0091.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0092.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0093.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0094.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0095.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0096.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0099.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0098.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0097.jpg",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/MuhammadAli/IMG1_0100.jpg",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
     },
-
-
-  {
-    "title_en": "Johannes Mario Simmel",
-    "title_de": "Johannes Mario Simmel",
-    "link": "https://de.wikipedia.org/wiki/Johannes_Mario_Simmel",
-    "description_en": "Johannes Mario Simmel (1924–2009) was a highly prolific and successful Austrian writer.\n\nHe was a master of the \"social-problem\" thriller, known for blending suspenseful storytelling with serious critiques of contemporary society, politics, and historical memory (particularly regarding the aftermath of WWII).",
-    "description_de": "Johannes Mario Simmel (1924–2009) war ein äußerst produktiver und erfolgreicher österreichischer Schriftsteller.\n\nEr war ein Meister des \"Gesellschaftsproblem\"-Thrillers, bekannt für die Verbindung von spannender Erzählkunst mit ernsthafter Kritik an der zeitgenössischen Gesellschaft, Politik und dem historischen Gedächtnis (insbesondere bezüglich der Nachwirkungen des Zweiten Weltkriegs).",
-    "photos": [
-      {
-        "photo": "assets/images/simmel.png",
-        "description_en": "",
-        "description_de": ""
+    {
+        "title_en": "Klaus Löwitsch",
+        "title_de": "Klaus Löwitsch",
+        "link": "https://de.wikipedia.org/wiki/Klaus_L%C3%B6witsch",
+        "description_en": "Klaus Löwitsch (8 April 1936 in Berlin – 3 December 2002 in Munich) was an Austrian-German actor. He was considered an important character actor in film, television and on the theatre stage.",
+        "description_de": "Klaus Löwitsch (* 8. April 1936 in Berlin; † 3. Dezember 2002 in München) war ein österreichisch-deutscher Schauspieler. Er galt als bedeutender Charakterdarsteller in Film, Fernsehen und auf der Theaterbühne.",
+        "photos": [
+            {
+                "photo": "assets/images/Klaus01.png",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Klaus02.jpg",
+                "description_en": "Ina with Klaus",
+                "description_de": "Ina mit Klaus"
+            }
+        ]
+    },
+    {
+        "title_en": "Klaus Kinski",
+        "title_de": "Klaus Kinski",
+        "link": "https://en.wikipedia.org/wiki/Klaus_Kinski",
+        "description_en": "Without a doubt one of the most intense actors ever to grace the silver screen, Klaus Kinski tapped into his dark inner reaches to deliver a number of spellbinding performances.",
+        "description_de": "Ohne Zweifel einer der intensivsten Schauspieler, die je die Leinwand zierten, schöpfte Klaus Kinski aus seinen dunklen inneren Tiefen, um eine Reihe fesselnder Darbietungen zu liefern.",
+        "photos": [
+            {
+                "photo": "assets/images/KlausKinski01.png",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/KlausKinski02.png",
+                "description_en": "Klaus with his daughter",
+                "description_de": "Klaus mit seiner Tochter"
+            }
+        ]
+    },
+    {
+        "title_en": "Kirk Douglas",
+        "title_de": "Kirk Douglas",
+        "link": "https://en.wikipedia.org/wiki/Kirk_Douglas",
+        "description_en": "Kirk Douglas (born Issur Danielovitch; December 9, 1916 – February 5, 2020) was an American actor and filmmaker.",
+        "description_de": "Kirk Douglas (geboren als Issur Danielovitch; 9. Dezember 1916 – 5. Februar 2020) war ein amerikanischer Schauspieler und Filmemacher.",
+        "photos": [
+            {
+                "photo": "assets/images/Kirk_scan0001.png",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Kirk_scan0002.png",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Kirk_scan0003.png",
+                "description_en": "",
+                "description_de": ""
+            },
+            {
+                "photo": "assets/images/Kirk_scan0004.png",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
+    },
+    {
+        "title_en": "Rosel Zech",
+        "title_de": "Rosel Zech",
+        "link": "https://en.wikipedia.org/wiki/Rosel_Zech",
+        "description_en": "Rosalie Helga Lina Zech (7 July 1940 – 31 August 2011), known as Rosel Zech, was a German theater and film actress. She is most well known for her works associated with the \"Autorenkino\" (New German Cinema) movement, which began in the 1970s.",
+        "description_de": "Rosalie Helga Lina Zech (7. Juli 1940 – 31. August 2011), bekannt als Rosel Zech, war eine deutsche Theater- und Filmschauspielerin. Sie ist vor allem für ihre Arbeiten im Zusammenhang mit der \"Autorenkino\"-Bewegung (Neuer Deutscher Film) bekannt, die in den 1970er Jahren begann.",
+        "photos": [
+            {
+                "photo": "assets/images/Rosl_Scan0005.png",
+                "description_en": "Rosel Zech in \"Veronika Voss\", 1982, directed by Rainer Werner Fassbinder",
+                "description_de": "Rosel Zech in \"Die Sehnsucht der Veronika Voss\", 1982, Regie: Rainer Werner Fassbinder"
+            },
+            {
+                "photo": "assets/images/Rosl_Scan0004.png",
+                "description_en": "Rosel Zech in \"Veronika Voss\", 1982, directed by Rainer Werner Fassbinder",
+                "description_de": "Rosel Zech in \"Die Sehnsucht der Veronika Voss\", 1982, Regie: Rainer Werner Fassbinder"
+            },
+            {
+                "photo": "assets/images/Rosl_Scan0001.png",
+                "description_en": "Rosel Zech in \"Veronika Voss\", 1982, directed by Rainer Werner Fassbinder",
+                "description_de": "Rosel Zech in \"Die Sehnsucht der Veronika Voss\", 1982, Regie: Rainer Werner Fassbinder"
+            }
+        ]
+    },
+    {
+        "title_en": "Gustavo Rojo",
+        "title_de": "Gustavo Rojo",
+        "link": "https://en.wikipedia.org/wiki/Gustavo_Rojo",
+        "description_en": "Gustavo Rojo Pinto (5 September 1923 – 22 April 2017) was a Mexican actor. He was married to Erika Remberg, an Austrian actress and close friend to Ina",
+        "description_de": "Gustavo Rojo Pinto (5 September 1923 – 22 April 2017) war ein mexikanischer Schauspieler. Er war mit Erika Rembert, einer östereicherischen Schauspielerin und gute Freundin von Ina, verheiratet.",
+        "photos": [
+            {
+                "photo": "assets/images/JohnGavin.png",
+                "description_en": "",
+                "description_de": ""
+            }
+        ]
     }
-    ]
-    },
-
-
-  {
-    "title_en": "Muhammad Ali",
-    "title_de": "Muhammad Ali",
-    "link": "https://en.wikipedia.org/wiki/Muhammad_Ali",
-    "description_en": "Muhammad Ali (born Cassius Marcellus Clay Jr.; January 17, 1942 – June 3, 2016) was an American professional boxer and activist.",
-    "description_de": "Muhammad Ali (geboren als Cassius Marcellus Clay Jr.; 17. Januar 1942 – 3. Juni 2016) war ein amerikanischer Profiboxer und Aktivist.",
-    "photos": [
-
-      {
-        "photo": "assets/images/MuhammadAli/Scan0014.png",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0089.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0090.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0091.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0092.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0093.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0094.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0095.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0096.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0099.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0098.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0097.jpg",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/MuhammadAli/IMG1_0100.jpg",
-        "description_en": "",
-        "description_de": ""
-    }
-    ]
-    },
-  {
-    "title_en": "Klaus Löwitsch",
-    "title_de": "Klaus Löwitsch",
-    "link": "https://de.wikipedia.org/wiki/Klaus_L%C3%B6witsch",
-    "description_en": "Klaus Löwitsch (8 April 1936 in Berlin – 3 December 2002 in Munich) was an Austrian-German actor. He was considered an important character actor in film, television and on the theatre stage.",
-    "description_de": "Klaus Löwitsch (* 8. April 1936 in Berlin; † 3. Dezember 2002 in München) war ein österreichisch-deutscher Schauspieler. Er galt als bedeutender Charakterdarsteller in Film, Fernsehen und auf der Theaterbühne.",
-    "photos": [{
-      "photo": "assets/images/Klaus01.png",
-      "description_en": "",
-      "description_de": ""
-    }, {
-      "photo": "assets/images/Klaus02.jpg",
-      "description_en": "Ina with Klaus",
-      "description_de": "Ina mit Klaus"
-    }]
-    },
-  {
-    "title_en": "Klaus Kinski",
-    "title_de": "Klaus Kinski",
-    "link": "https://en.wikipedia.org/wiki/Klaus_Kinski",
-    "description_en": "Without a doubt one of the most intense actors ever to grace the silver screen, Klaus Kinski tapped into his dark inner reaches to deliver a number of spellbinding performances.",
-    "description_de": "Ohne Zweifel einer der intensivsten Schauspieler, die je die Leinwand zierten, schöpfte Klaus Kinski aus seinen dunklen inneren Tiefen, um eine Reihe fesselnder Darbietungen zu liefern.",
-    "photos": [{
-      "photo": "assets/images/KlausKinski01.png",
-      "description_en": "",
-      "description_de": ""
-    }, {
-      "photo": "assets/images/KlausKinski02.png",
-      "description_en": "Klaus with his daughter",
-      "description_de": "Klaus mit seiner Tochter"
-    }]
-    },
-  {
-    "title_en": "Kirk Douglas",
-    "title_de": "Kirk Douglas",
-    "link": "https://en.wikipedia.org/wiki/Kirk_Douglas",
-    "description_en": "Kirk Douglas (born Issur Danielovitch; December 9, 1916 – February 5, 2020) was an American actor and filmmaker.",
-    "description_de": "Kirk Douglas (geboren als Issur Danielovitch; 9. Dezember 1916 – 5. Februar 2020) war ein amerikanischer Schauspieler und Filmemacher.",
-    "photos": [
-      {
-        "photo": "assets/images/Kirk_scan0001.png",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Kirk_scan0002.png",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Kirk_scan0003.png",
-        "description_en": "",
-        "description_de": ""
-    },
-      {
-        "photo": "assets/images/Kirk_scan0004.png",
-        "description_en": "",
-        "description_de": ""
-    }
-]
-    },
-  {
-    "title_en": "Rosel Zech",
-    "title_de": "Rosel Zech",
-    "link": "https://en.wikipedia.org/wiki/Rosel_Zech",
-    "description_en": "Rosalie Helga Lina Zech (7 July 1940 – 31 August 2011), known as Rosel Zech, was a German theater and film actress. She is most well known for her works associated with the \"Autorenkino\" (New German Cinema) movement, which began in the 1970s.",
-    "description_de": "Rosalie Helga Lina Zech (7. Juli 1940 – 31. August 2011), bekannt als Rosel Zech, war eine deutsche Theater- und Filmschauspielerin. Sie ist vor allem für ihre Arbeiten im Zusammenhang mit der \"Autorenkino\"-Bewegung (Neuer Deutscher Film) bekannt, die in den 1970er Jahren begann.",
-    "photos": [
-      {
-        "photo": "assets/images/Rosl_Scan0005.png",
-        "description_en": "Rosel Zech in \"Veronika Voss\", 1982, directed by Rainer Werner Fassbinder",
-        "description_de": "Rosel Zech in \"Die Sehnsucht der Veronika Voss\", 1982, Regie: Rainer Werner Fassbinder"
-    },
-      {
-        "photo": "assets/images/Rosl_Scan0004.png",
-        "description_en": "Rosel Zech in \"Veronika Voss\", 1982, directed by Rainer Werner Fassbinder",
-        "description_de": "Rosel Zech in \"Die Sehnsucht der Veronika Voss\", 1982, Regie: Rainer Werner Fassbinder"
-    },
-      {
-        "photo": "assets/images/Rosl_Scan0001.png",
-        "description_en": "Rosel Zech in \"Veronika Voss\", 1982, directed by Rainer Werner Fassbinder",
-        "description_de": "Rosel Zech in \"Die Sehnsucht der Veronika Voss\", 1982, Regie: Rainer Werner Fassbinder"
-    }
-]
-    },
-  {
-    "title_en": "Gustavo Rojo",
-    "title_de": "Gustavo Rojo",
-    "link": "https://en.wikipedia.org/wiki/Gustavo_Rojo",
-    "description_en": "Gustavo Rojo Pinto (5 September 1923 – 22 April 2017) was a Mexican actor. He was married to Erika Remberg, an Austrian actress and close friend to Ina",
-    "description_de": "Gustavo Rojo Pinto (5 September 1923 – 22 April 2017) war ein mexikanischer Schauspieler. Er war mit Erika Rembert, einer östereicherischen Schauspielerin und gute Freundin von Ina, verheiratet.",
-    "photos": [{
-      "photo": "assets/images/JohnGavin.png",
-      "description_en": "",
-      "description_de": ""
-    }]
-  }
 ]
