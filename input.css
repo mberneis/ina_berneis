@@ -138,6 +138,13 @@
     cursor: pointer;
   }
 
+  /* Single image centered layout */
+  @media (min-width: 1024px) {
+    .lg\:w-1\/2 {
+      width: 50%;
+    }
+  }
+
   /* Lightbox styles */
   .lightbox {
     position: fixed;

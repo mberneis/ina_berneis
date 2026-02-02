@@ -909,6 +909,11 @@
   .photo-container {
     cursor: pointer;
   }
+  @media (min-width: 1024px) {
+    .lg\:w-1\/2 {
+      width: 50%;
+    }
+  }
   .lightbox {
     position: fixed;
     inset: 0;
