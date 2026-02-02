@@ -20,20 +20,20 @@
       "description_de": ""
     },
     {
-      "photo": "assets/images/TonyCurtis.jpg",
-      "description_en": "Ina with Tony Curtis and Debbie Reynolds at a movie event",
-      "description_de": "Ina mit Tony Curtis und Debbie Reynolds bei einer Filmveranstaltung"
-    },
+      "photo": "assets/images/ElvisPresley02.png",
+      "description_en": "Ina presenting Elvis with a medal",
+      "description_de": "Ina überreicht Elvis eine Medaille"
+            },
     {
       "photo": "assets/images/ElvisPresley01.png",
       "description_en": "Ina interviewing Elvis Presley",
       "description_de": "Ina interviewt Elvis Presley"
             },
     {
-      "photo": "assets/images/ElvisPresley02.png",
-      "description_en": "Ina presenting Elvis with a medal",
-      "description_de": "Ina überreicht Elvis eine Medaille"
-            },
+      "photo": "assets/images/TonyCurtis.jpg",
+      "description_en": "Ina with Tony Curtis and Debbie Reynolds at a movie event",
+      "description_de": "Ina mit Tony Curtis und Debbie Reynolds bei einer Filmveranstaltung"
+    },
     {
       "photo": "assets/images/RockHudson.jpg",
       "description_en": "Ina presenting a medal to Rock Hudson",
@@ -47,33 +47,33 @@
     {
       "photo": "assets/images/NancyKwan/IMG1_0191.jpg",
       "description_en": "At her wedding with her brother",
-      "description_de": "Bei ihrer Hochzeit mit ihrem Bruder"
+      "description_de": "Bei Nancy Kwans Hochzeit mit ihrem Bruder"
     },
     {
       "photo": "assets/images/NancyKwan/IMG1_0193.jpg",
       "description_en": "At her wedding with her husband Peter Pock",
-      "description_de": "Bei ihrer Hochzeit mit ihrem Ehemann Peter Pock"
+      "description_de": "Bei Nancy Kwans Hochzeit mit ihrem Ehemann Peter Pock"
     },
     {
       "photo": "assets/images/carygrant02.jpg",
       "description_en": "Cary Grant riding out with Ina",
       "description_de": "Cary Grant beim Ausreiten mit Ina"
             },
-
-    {
-      "photo": "assets/images/MaronBrando6.png",
-      "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando.",
-      "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando."
-            },
-    {
-      "photo": "assets/images/MaronBrando7.png",
-      "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando.",
-      "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando."
-            },
     {
       "photo": "assets/images/MaronBrando5.png",
       "description_en": "Ina with her son Michael and Marlon.",
       "description_de": "Ina mit Ihrem Sohn Michael und Marlon."
+            },
+    {
+      "photo": "assets/images/MaronBrando6.png",
+      "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando with Ina as maid of honor.",
+      "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando mit Ina als Trauzeugin."
+            },
+    {
+      "photo": "assets/images/MaronBrando7.png",
+      "description_en": "Photos of the wedding of Anna Kashfi and Marlon Brando with Ina as maid of honor.",
+      "description_de": "Bilder der Hochzeit von Anna Kashfi und Marlon Brando mit Ina als Trauzeugin."
             }
+
     ]
 }

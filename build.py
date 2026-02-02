@@ -26,6 +26,11 @@ def load_movies():
     with open('data/movies.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def load_hollywood():
+    """Load hollywood.json data"""
+    with open('data/hollywood.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
+
 def get_nav_items(lang, current_page, photos):
     """Generate navigation items from photos array (sorted alphabetically)"""
     nav_items = []
@@ -50,12 +55,13 @@ def get_movie_nav_items(lang, current_page, movies):
 
     return '\n                        '.join(nav_items)
 
-def create_page(lang, page_name, data, template, photos, movies):
+def create_page(lang, page_name, data, template, photos, movies, hollywood=None):
     """Generate HTML page from data"""
     labels = {
         'en': {
             'life': 'Biography',
             'career': 'Career',
+            'hollywood': 'Hollywood',
             'photography': 'Photography',
             'movies': 'Movies',
             'photographer': 'Photographer',
@@ -64,6 +70,7 @@ def create_page(lang, page_name, data, template, photos, movies):
         'de': {
             'life': 'Biographie',
             'career': 'Karriere',
+            'hollywood': 'Hollywood',
             'photography': 'Fotografie',
             'movies': 'Filme',
             'photographer': 'Fotografin',
@@ -162,6 +169,7 @@ def create_page(lang, page_name, data, template, photos, movies):
     # Active states
     life_active = 'font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100' if page_name == 'life' else ''
     career_active = 'font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100' if page_name == 'career' else ''
+    hollywood_active = 'font-semibold bg-gray-200 dark:bg-gray-800 dark:text-gray-100' if page_name == 'hollywood' else ''
     lang_en_active = 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900' if lang == 'en' else 'text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800'
     lang_de_active = 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900' if lang == 'de' else 'text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800'
 
@@ -176,10 +184,12 @@ def create_page(lang, page_name, data, template, photos, movies):
             movie_nav_items=movie_nav_items,
             life_active=life_active,
             career_active=career_active,
+            hollywood_active=hollywood_active,
             lang_en_active=lang_en_active,
             lang_de_active=lang_de_active,
             life_label=labels[lang]['life'],
             career_label=labels[lang]['career'],
+            hollywood_label=labels[lang]['hollywood'],
             photography_label=labels[lang]['photography'],
             movies_label=labels[lang]['movies'],
             photographer_label=labels[lang]['photographer']
@@ -199,9 +209,10 @@ def main():
     with open('template.html', 'r', encoding='utf-8') as f:
         template = f.read()
 
-    # Load photos and movies
+    # Load photos, movies, and hollywood
     photos = load_photos()
     movies = load_movies()
+    hollywood = load_hollywood()
 
     # Create life and career pages
     for page_name in ['life', 'career']:
@@ -210,6 +221,11 @@ def main():
             data = json.load(f)
             create_page('en', page_name, data, template, photos, movies)
             create_page('de', page_name, data, template, photos, movies)
+
+    # Create hollywood page
+    print(f"  Processing hollywood.json...")
+    create_page('en', 'hollywood', hollywood, template, photos, movies)
+    create_page('de', 'hollywood', hollywood, template, photos, movies)
 
     # Create photo pages from photos.json
     print(f"  Processing photos.json...")
