@@ -51,12 +51,18 @@
         {
             "date": "1962",
             "description_en": "Move to London for movie project.",
-            "description_de": "Umzug nach London fuer Film Projekt."
+            "description_de": "Umzug nach London für Film Projekt."
         },
         {
             "date": "1963",
-            "description_en": "Move to Munich.",
-            "description_de": "Umzug nach München."
+            "description_en": "Move to Munich and stayed there for the rest of her life.",
+            "description_de": "Umzug nach München und blieb dort bis zum Ende ihres Lebens."
+        },
+        {
+            "date": "1980's",
+            "description_en": "Worked on several movies with Margarethe von Trotta and Volkar Schlöndorf.",
+            "description_de": "Arbeitete an mehreren Filment mit Margarethe von Trotta und Volkar Schlöndorf.",
+            "photo": "assets/images/Margarethe_volkar.jpg"
         },
         {
             "date": "5/2023",
