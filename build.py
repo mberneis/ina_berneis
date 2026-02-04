@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import time
 import unicodedata
 
 def nl2br(text):
@@ -60,7 +61,7 @@ def get_movie_nav_items(lang, current_page, movies):
 
     return '\n                        '.join(nav_items)
 
-def create_page(lang, page_name, data, template, photos, movies, hollywood=None):
+def create_page(lang, page_name, data, template, photos, movies, css_version, hollywood=None):
     """Generate HTML page from data"""
     labels = {
         'en': {
@@ -199,6 +200,7 @@ def create_page(lang, page_name, data, template, photos, movies, hollywood=None)
             content=content,
             page_name=page_name,
             css_path="../assets/css/",
+            css_version=css_version,
             nav_items=nav_items,
             movie_nav_items=movie_nav_items,
             life_active=life_active,
@@ -214,7 +216,7 @@ def create_page(lang, page_name, data, template, photos, movies, hollywood=None)
             photographer_label=labels[lang]['photographer']
         ))
 
-def create_thea_page(data):
+def create_thea_page(data, css_version):
     """Generate the standalone thea subsite page"""
     # Generate photo grid HTML
     photos_html = ''
@@ -232,7 +234,7 @@ def create_thea_page(data):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <link href="../assets/css/style.css?v=3" rel="stylesheet">
+    <link href="../assets/css/style.css?v={css_version}" rel="stylesheet">
     <script>
         // Dark mode detection and initialization
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {{
@@ -448,6 +450,9 @@ def main():
     """Main function to build the static site"""
     print("Building Ina Berneis website...")
 
+    # Generate cache-buster version based on current timestamp
+    css_version = int(time.time())
+
     # Create output directories
     os.makedirs('public/en', exist_ok=True)
     os.makedirs('public/de', exist_ok=True)
@@ -468,34 +473,34 @@ def main():
         print(f"  Processing {page_name}.json...")
         with open(f'data/{page_name}.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
-            create_page('en', page_name, data, template, photos, movies)
-            create_page('de', page_name, data, template, photos, movies)
+            create_page('en', page_name, data, template, photos, movies, css_version)
+            create_page('de', page_name, data, template, photos, movies, css_version)
 
     # Create hollywood page
     print(f"  Processing hollywood.json...")
-    create_page('en', 'hollywood', hollywood, template, photos, movies)
-    create_page('de', 'hollywood', hollywood, template, photos, movies)
+    create_page('en', 'hollywood', hollywood, template, photos, movies, css_version)
+    create_page('de', 'hollywood', hollywood, template, photos, movies, css_version)
 
     # Create photo pages from photos.json
     print(f"  Processing photos.json...")
     for item in photos:
         page_name = slugify(item['title_en'])
         print(f"    Creating {page_name} pages...")
-        create_page('en', page_name, item, template, photos, movies)
-        create_page('de', page_name, item, template, photos, movies)
+        create_page('en', page_name, item, template, photos, movies, css_version)
+        create_page('de', page_name, item, template, photos, movies, css_version)
 
     # Create movie pages from movies.json
     print(f"  Processing movies.json...")
     for item in movies:
         page_name = 'movie-' + slugify(item['title_en'])
         print(f"    Creating {page_name} pages...")
-        create_page('en', page_name, item, template, photos, movies)
-        create_page('de', page_name, item, template, photos, movies)
+        create_page('en', page_name, item, template, photos, movies, css_version)
+        create_page('de', page_name, item, template, photos, movies, css_version)
 
     # Create thea subsite
     print("  Processing thea.json...")
     thea = load_thea()
-    create_thea_page(thea)
+    create_thea_page(thea, css_version)
 
     # Create index page with language detection
     print("  Creating index page...")
