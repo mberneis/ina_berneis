@@ -24,11 +24,18 @@
             <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Ina Berneis</h1>
             <p class="text-xs text-gray-600 dark:text-gray-400">Fotografin <span class="text-gray-500 dark:text-gray-500">1927 - 2003</span></p>
         </div>
-        <button id="menu-toggle" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Toggle menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
+        <div class="flex items-center gap-2">
+            <button id="dark-mode-toggle-mobile" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Toggle dark mode">
+                <svg id="theme-icon-mobile" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+            </button>
+            <button id="menu-toggle" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Toggle menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
     </header>
 
     <!-- Mobile Menu Overlay -->
@@ -58,10 +65,17 @@
                 </button>
             </div>
 
-            <!-- Language Switcher -->
-            <div class="flex gap-2 pb-6 mb-8 border-b border-gray-200 dark:border-gray-800">
-                <a href="../en/gustavo-rojo.html" class="px-3 py-1 text-sm rounded text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">EN</a>
-                <a href="../de/gustavo-rojo.html" class="px-3 py-1 text-sm rounded bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 transition-colors">DE</a>
+            <!-- Language Switcher and Dark Mode -->
+            <div class="flex items-center justify-between gap-2 pb-6 mb-8 border-b border-gray-200 dark:border-gray-800">
+                <div class="flex gap-2">
+                    <a href="../en/gustavo-rojo.html" class="px-3 py-1 text-sm rounded text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">EN</a>
+                    <a href="../de/gustavo-rojo.html" class="px-3 py-1 text-sm rounded bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 transition-colors">DE</a>
+                </div>
+                <button id="dark-mode-toggle" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Toggle dark mode">
+                    <svg id="theme-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
             </div>
 
             <!-- Navigation Links -->
@@ -239,6 +253,84 @@
                             menuOverlay.classList.add('hidden');
                             document.body.style.overflow = '';
                         }
+                    }
+                }
+            });
+        })();
+    </script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        (function() {
+            const toggle = document.getElementById('dark-mode-toggle');
+            const toggleMobile = document.getElementById('dark-mode-toggle-mobile');
+            const icon = document.getElementById('theme-icon');
+            const iconMobile = document.getElementById('theme-icon-mobile');
+
+            // Get current mode: 'dark', 'light', or 'system'
+            function getMode() {
+                if (localStorage.theme === 'dark') return 'dark';
+                if (localStorage.theme === 'light') return 'light';
+                return 'system';
+            }
+
+            function applyMode(mode) {
+                if (mode === 'dark') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.theme = 'dark';
+                } else if (mode === 'light') {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.theme = 'light';
+                } else {
+                    localStorage.removeItem('theme');
+                    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        document.documentElement.classList.add('dark');
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                    }
+                }
+                updateIcons(mode);
+            }
+
+            function updateIcons(mode) {
+                let path;
+                if (mode === 'light') {
+                    // Sun icon for light mode
+                    path = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>';
+                } else if (mode === 'dark') {
+                    // Moon icon for dark mode
+                    path = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>';
+                } else {
+                    // Computer/monitor icon for system mode
+                    path = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>';
+                }
+                icon.innerHTML = path;
+                iconMobile.innerHTML = path;
+            }
+
+            function cycleMode() {
+                const current = getMode();
+                let next;
+                if (current === 'light') next = 'dark';
+                else if (current === 'dark') next = 'system';
+                else next = 'light';
+                applyMode(next);
+            }
+
+            // Cycle: light -> dark -> system -> light
+            toggle.addEventListener('click', cycleMode);
+            toggleMobile.addEventListener('click', cycleMode);
+
+            // Initialize icons
+            updateIcons(getMode());
+
+            // Listen for system preference changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                if (getMode() === 'system') {
+                    if (e.matches) {
+                        document.documentElement.classList.add('dark');
+                    } else {
+                        document.documentElement.classList.remove('dark');
                     }
                 }
             });

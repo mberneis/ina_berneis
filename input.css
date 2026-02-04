@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Monochromatic color palette for professional photography site */
   --color-gray-50: #fafafa;
@@ -65,15 +67,13 @@
     color: var(--color-gray-900);
   }
 
-  @media (prefers-color-scheme: dark) {
-    .nav-link {
-      color: var(--color-gray-400);
-    }
+  .dark .nav-link {
+    color: var(--color-gray-400);
+  }
 
-    .nav-link:hover {
-      background-color: var(--color-gray-800);
-      color: var(--color-white);
-    }
+  .dark .nav-link:hover {
+    background-color: var(--color-gray-800);
+    color: var(--color-white);
   }
 
   /* Timeline styles for Life page */
@@ -96,15 +96,13 @@
     border: 3px solid var(--color-gray-100);
   }
 
-  @media (prefers-color-scheme: dark) {
-    .timeline-item {
-      border-left-color: var(--color-gray-700);
-    }
+  .dark .timeline-item {
+    border-left-color: var(--color-gray-700);
+  }
 
-    .timeline-item::before {
-      background-color: var(--color-gray-100);
-      border-color: var(--color-gray-900);
-    }
+  .dark .timeline-item::before {
+    background-color: var(--color-gray-100);
+    border-color: var(--color-gray-900);
   }
 
   /* Image styles */
@@ -126,11 +124,9 @@
     transform: scale(1.02);
   }
 
-  @media (prefers-color-scheme: dark) {
-    .photo-container {
-      background-color: var(--color-gray-900);
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-    }
+  .dark .photo-container {
+    background-color: var(--color-gray-900);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
   }
 
   /* Clickable photo containers */
