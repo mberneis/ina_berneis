@@ -1,0 +1,26 @@
+{
+    "title": "Thea",
+    "description_en": "My grandmother from my mothers side Thea Ziesemar.",
+    "description_de": "Meine Grossmutter mütterlicherseits Thea Ziesemar.",
+    "photos": [
+        { "photo": "thea/images/family_scan0019_2.png" },
+        { "photo": "thea/images/IMG1_0207.jpg" },
+        { "photo": "thea/images/IMG1_0228.jpg" },
+        { "photo": "thea/images/IMG1_0229.jpg" },
+        { "photo": "thea/images/Ziesemar_Scan0002.png" },
+        { "photo": "thea/images/Ziesemar_Scan0007.png" },
+        { "photo": "thea/images/Ziesemar_Scan0008.png" },
+        { "photo": "thea/images/Ziesemar_Scan0011.png" },
+        { "photo": "thea/images/Ziesemar_Scan0014.png" },
+        { "photo": "thea/images/Ziesemar_Scan0015.png" },
+        { "photo": "thea/images/Ziesemar_Scan0016.png" },
+        { "photo": "thea/images/Ziesemar_Scan0017.png" },
+        { "photo": "thea/images/Ziesemar_Scan0022.png" },
+        { "photo": "thea/images/Ziesemar_Scan0023_2.png" },
+        { "photo": "thea/images/family_scan0008_2.png" },
+        { "photo": "thea/images/family_scan0010_2.png" },
+        { "photo": "thea/images/family_scan0012_2.png" },
+        { "photo": "thea/images/family_scan0013_2.png" },
+        { "photo": "thea/images/IMG1_0206.jpg" }
+    ]
+}
