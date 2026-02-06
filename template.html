@@ -127,6 +127,7 @@
             const sidebar = document.getElementById('sidebar');
 
             function openMenu() {{
+                sidebar.scrollTop = 0;
                 sidebar.classList.remove('-translate-x-full');
                 sidebar.classList.add('translate-x-0');
                 menuOverlay.classList.remove('hidden');
