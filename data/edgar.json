@@ -1,0 +1,86 @@
+{
+    "title": "Edgar Ziesemar",
+    "site_title": "Edgar Ziesemar",
+    "description_en": "Edgar Ziesemer (father of Ina Berneis) received his photographic training at the Technische Hochschule (Institute of Technology). In 1916 he joined Deutsche Bioscop and began working as a cameraman. Between 1918 and 1920 Ziesemer worked as a camera operator for May Film. From 1921 to 1924 he owned his own production company. In 1925 Ziesemer returned to working behind the camera.\n\nAs director of photography, initially still under the guidance of more experienced cameramen, Ziesemer now worked regularly in feature films. Until 1938 he shot a series of lesser films, mostly for smaller private companies and less often for major studios such as UFA. From 1939 to 1941 he shot several fairy-tale films for Hubert Schonger's production company, and from 1940 onwards Ziesemer concentrated on industrial and documentary films. After the Second World War his main field of work remained documentary film, and later also television.",
+    "description_de": "Edgar Ziesemer (der Vater von Ina Berneis) hatte seine fotografische Ausbildung an der Technischen Hochschule erhalten. 1916 ging er zur Deutschen Bioscop und begann seine Tätigkeit als Kameramann. Zwischen 1918 und 1920 arbeitete Ziesemer als einfacher Kameramann für die May Film. Von 1921 bis 1924 besaß er seine eigene Produktionsfirma. 1925 kehrte Ziesemer hinter die Kamera zurück.\n\nAls Chefkameramann, zunächst weiterhin unter der Patronage erfahrenerer Kameraleute, arbeitete Ziesemer nunmehr regelmäßig für den Kinofilm. Bis 1938 fotografierte er eine Reihe von minder wichtigen Filmen, meist für kleinere Privatgesellschaften, seltener für Großfirmen wie die UFA. 1939–1941 fotografierte er mehrere Märchenfilme für die Produktionsfirma Hubert Schongers, ab 1940 konzentrierte sich Ziesemer auf die Arbeit beim Industrie- und Dokumentarfilm. Auch nach dem Zweiten Weltkrieg lag sein Hauptbetätigungsfeld weiterhin beim Dokumentar-, später auch beim Fernsehfilm.",
+    "portrait": "edgar/images/Scan 40.jpeg",
+    "links": [
+        {
+            "label": "IMDb",
+            "url": "https://www.imdb.com/name/nm0956302/"
+        },
+        {
+            "label": "Wikipedia",
+            "url": "https://de.wikipedia.org/wiki/Edgar_Ziesemer"
+        }
+    ],
+    "sections": [
+        {
+            "title_en": "With Charlie Chaplin at UFA, Berlin",
+            "title_de": "Mit Charlie Chaplin bei der UFA, Berlin",
+            "photos": [
+                {
+                    "photo": "edgar/images/Scan 41.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                },
+                {
+                    "photo": "edgar/images/Scan 42.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                }
+            ]
+        },
+        {
+            "title_en": "During filming in Java, 1929",
+            "title_de": "Während der Dreharbeiten auf Java, 1929",
+            "photos": [
+                {
+                    "photo": "edgar/images/Scan 38.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                },
+                {
+                    "photo": "edgar/images/Scan 39.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                },
+                {
+                    "photo": "edgar/images/Scan 43.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                },
+                {
+                    "photo": "edgar/images/Scan 45.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                },
+                {
+                    "photo": "edgar/images/Scan 46.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                },
+                {
+                    "photo": "edgar/images/Scan 48.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                },
+                {
+                    "photo": "edgar/images/Scan 49.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                },
+                {
+                    "photo": "edgar/images/Scan 50.jpeg",
+                    "description_en": "",
+                    "description_de": ""
+                }
+            ]
+        },
+        {
+            "title_en": "Documentary filmed alongside the production of “<a href=\"https://www.imdb.com/title/tt0464140/\" target=\"_blank\" rel=\"noopener\" class=\"underline underline-offset-4\">Ohne Geld durch die Welt</a>” (Around the World Without Money)",
+            "title_de": "Dokumentarfilm, der neben den Dreharbeiten zu „<a href=\"https://www.imdb.com/title/tt0464140/\" target=\"_blank\" rel=\"noopener\" class=\"underline underline-offset-4\">Ohne Geld durch die Welt</a>“ gedreht wurde",
+            "youtube": "WFnM0PpAES4"
+        }
+    ]
+}

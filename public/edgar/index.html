@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Ziesemar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="../assets/css/style.css?v=1791158265" rel="stylesheet">
+    <script>
+        // Dark mode detection and initialization
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body class="min-h-full text-gray-900 transition-colors duration-300 bg-white dark:bg-gray-950 dark:text-gray-100">
+    <!-- Photo Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Header with Language Selector and Dark Mode Toggle -->
+    <header class="fixed top-0 left-0 right-0 z-40 border-b border-gray-200 bg-gray-50 dark:bg-gray-900 dark:border-gray-800">
+        <div class="flex items-center justify-between max-w-5xl px-4 py-3 mx-auto md:px-8">
+            <div>
+                <h1 class="text-xl font-bold text-gray-900 md:text-2xl dark:text-gray-100">Edgar Ziesemar</h1>
+            </div>
+            <div class="flex items-center gap-4">
+                <!-- Dark Mode Toggle -->
+                <button id="dark-mode-toggle" class="p-2 transition-colors rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800" aria-label="Toggle dark mode">
+                    <svg id="theme-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </button>
+                <!-- Language Switcher -->
+                <div class="flex gap-2">
+                    <button id="lang-en" class="px-3 py-1 text-sm transition-colors rounded bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900">EN</button>
+                    <button id="lang-de" class="px-3 py-1 text-sm transition-colors rounded text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800">DE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-20">
+        <div class="max-w-5xl px-4 py-8 mx-auto md:px-8 md:py-12">
+            <div class="mb-12 flow-root">
+                <div class="float-right w-32 mb-4 ml-6 photo-container md:w-56">
+                    <img src="../edgar/images/Scan%2040.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">Edgar Ziesemar</h2>
+                <p id="description" class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">Edgar Ziesemer (father of Ina Berneis) received his photographic training at the Technische Hochschule (Institute of Technology). In 1916 he joined Deutsche Bioscop and began working as a cameraman. Between 1918 and 1920 Ziesemer worked as a camera operator for May Film. From 1921 to 1924 he owned his own production company. In 1925 Ziesemer returned to working behind the camera.<br><br>As director of photography, initially still under the guidance of more experienced cameramen, Ziesemer now worked regularly in feature films. Until 1938 he shot a series of lesser films, mostly for smaller private companies and less often for major studios such as UFA. From 1939 to 1941 he shot several fairy-tale films for Hubert Schonger's production company, and from 1940 onwards Ziesemer concentrated on industrial and documentary films. After the Second World War his main field of work remained documentary film, and later also television.</p>
+                <div class="flex flex-wrap gap-6 mt-6">
+                    <a href="https://www.imdb.com/name/nm0956302/" target="_blank" rel="noopener" class="text-lg text-gray-700 underline underline-offset-4 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">IMDb</a>
+                    <a href="https://de.wikipedia.org/wiki/Edgar_Ziesemer" target="_blank" rel="noopener" class="text-lg text-gray-700 underline underline-offset-4 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Wikipedia</a>
+                </div>
+            </div>
+            <section class="mb-16">
+            <h3 class="mb-6 text-2xl font-semibold text-gray-900 dark:text-gray-100" data-en="With Charlie Chaplin at UFA, Berlin" data-de="Mit Charlie Chaplin bei der UFA, Berlin">With Charlie Chaplin at UFA, Berlin</h3>
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2041.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2042.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+            </div>
+            </section>
+            <section class="mb-16">
+            <h3 class="mb-6 text-2xl font-semibold text-gray-900 dark:text-gray-100" data-en="During filming in Java, 1929" data-de="Während der Dreharbeiten auf Java, 1929">During filming in Java, 1929</h3>
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2038.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2039.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2043.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2045.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2046.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2048.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2049.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+                <div class="photo-container">
+                    <img src="../edgar/images/Scan%2050.jpeg" alt="Edgar Ziesemar" class="w-full h-auto">
+                </div>
+            </div>
+            </section>
+            <section class="mb-16">
+            <h3 class="mb-6 text-2xl font-semibold text-gray-900 dark:text-gray-100" data-en="Documentary filmed alongside the production of “&lt;a href=&quot;https://www.imdb.com/title/tt0464140/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;underline underline-offset-4&quot;&gt;Ohne Geld durch die Welt&lt;/a&gt;” (Around the World Without Money)" data-de="Dokumentarfilm, der neben den Dreharbeiten zu „&lt;a href=&quot;https://www.imdb.com/title/tt0464140/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;underline underline-offset-4&quot;&gt;Ohne Geld durch die Welt&lt;/a&gt;“ gedreht wurde">Documentary filmed alongside the production of “<a href="https://www.imdb.com/title/tt0464140/" target="_blank" rel="noopener" class="underline underline-offset-4">Ohne Geld durch die Welt</a>” (Around the World Without Money)</h3>
+            <button type="button" class="relative block w-full overflow-hidden bg-black cursor-pointer group aspect-video" data-youtube="WFnM0PpAES4" aria-label="Documentary filmed alongside the production of “Ohne Geld durch die Welt” (Around the World Without Money)">
+                <img src="https://i.ytimg.com/vi/WFnM0PpAES4/hqdefault.jpg" alt="" class="object-cover w-full h-full transition-opacity group-hover:opacity-80">
+                <span class="absolute inset-0 flex items-center justify-center">
+                    <span class="flex items-center justify-center w-20 h-20 transition-colors rounded-full bg-black/70 group-hover:bg-black/90">
+                        <svg class="w-10 h-10 ml-1 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </span>
+                </span>
+            </button>
+            </section>
+        </div>
+    </main>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <button id="video-modal-close" type="button" class="absolute p-2 text-white transition-opacity top-4 right-4 opacity-70 hover:opacity-100" aria-label="Close">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="w-[90vw] max-w-5xl aspect-video">
+            <iframe id="video-modal-frame" class="w-full h-full" src="" title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Video Modal Script -->
+    <script>
+        (function() {
+            const modal = document.getElementById('video-modal');
+            const frame = document.getElementById('video-modal-frame');
+
+            function openVideo(id) {
+                frame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0';
+                modal.classList.add('active');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeVideo() {
+                modal.classList.remove('active');
+                modal.setAttribute('aria-hidden', 'true');
+                frame.src = '';
+                document.body.style.overflow = '';
+            }
+
+            document.querySelectorAll('[data-youtube]').forEach(button => {
+                button.addEventListener('click', () => openVideo(button.dataset.youtube));
+            });
+
+            // Close on backdrop or close button, but not on the player itself
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal || e.target.closest('#video-modal-close')) {
+                    closeVideo();
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeVideo();
+                }
+            });
+        })();
+    </script>
+
+    <!-- Footer -->
+    <footer class="py-6 mt-8 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-5xl px-4 mx-auto md:px-8">
+            <p class="text-xs text-center text-gray-500 dark:text-gray-500">&copy; <span id="copyright-year"></span> Estate of Ina Berneis</p>
+            <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        (function() {
+            const toggle = document.getElementById('dark-mode-toggle');
+            const icon = document.getElementById('theme-icon');
+
+            // Get current mode: 'dark', 'light', or 'system'
+            function getMode() {
+                if (localStorage.theme === 'dark') return 'dark';
+                if (localStorage.theme === 'light') return 'light';
+                return 'system';
+            }
+
+            function applyMode(mode) {
+                if (mode === 'dark') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.theme = 'dark';
+                } else if (mode === 'light') {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.theme = 'light';
+                } else {
+                    localStorage.removeItem('theme');
+                    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        document.documentElement.classList.add('dark');
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                    }
+                }
+                updateIcon(mode);
+            }
+
+            function updateIcon(mode) {
+                if (mode === 'light') {
+                    // Sun icon for light mode
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>';
+                } else if (mode === 'dark') {
+                    // Moon icon for dark mode
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>';
+                } else {
+                    // Computer/monitor icon for system mode
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>';
+                }
+            }
+
+            // Cycle: light -> dark -> system -> light
+            toggle.addEventListener('click', function() {
+                const current = getMode();
+                let next;
+                if (current === 'light') next = 'dark';
+                else if (current === 'dark') next = 'system';
+                else next = 'light';
+                applyMode(next);
+            });
+
+            // Initialize icon
+            updateIcon(getMode());
+
+            // Listen for system preference changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                if (getMode() === 'system') {
+                    if (e.matches) {
+                        document.documentElement.classList.add('dark');
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                    }
+                }
+            });
+        })();
+    </script>
+
+    <!-- Language Switcher Script -->
+    <script>
+        (function() {
+            const langEn = document.getElementById('lang-en');
+            const langDe = document.getElementById('lang-de');
+            const description = document.getElementById('description');
+
+            const texts = {
+                en: "Edgar Ziesemer (father of Ina Berneis) received his photographic training at the Technische Hochschule (Institute of Technology). In 1916 he joined Deutsche Bioscop and began working as a cameraman. Between 1918 and 1920 Ziesemer worked as a camera operator for May Film. From 1921 to 1924 he owned his own production company. In 1925 Ziesemer returned to working behind the camera.<br><br>As director of photography, initially still under the guidance of more experienced cameramen, Ziesemer now worked regularly in feature films. Until 1938 he shot a series of lesser films, mostly for smaller private companies and less often for major studios such as UFA. From 1939 to 1941 he shot several fairy-tale films for Hubert Schonger's production company, and from 1940 onwards Ziesemer concentrated on industrial and documentary films. After the Second World War his main field of work remained documentary film, and later also television.",
+                de: "Edgar Ziesemer (der Vater von Ina Berneis) hatte seine fotografische Ausbildung an der Technischen Hochschule erhalten. 1916 ging er zur Deutschen Bioscop und begann seine Tätigkeit als Kameramann. Zwischen 1918 und 1920 arbeitete Ziesemer als einfacher Kameramann für die May Film. Von 1921 bis 1924 besaß er seine eigene Produktionsfirma. 1925 kehrte Ziesemer hinter die Kamera zurück.<br><br>Als Chefkameramann, zunächst weiterhin unter der Patronage erfahrenerer Kameraleute, arbeitete Ziesemer nunmehr regelmäßig für den Kinofilm. Bis 1938 fotografierte er eine Reihe von minder wichtigen Filmen, meist für kleinere Privatgesellschaften, seltener für Großfirmen wie die UFA. 1939–1941 fotografierte er mehrere Märchenfilme für die Produktionsfirma Hubert Schongers, ab 1940 konzentrierte sich Ziesemer auf die Arbeit beim Industrie- und Dokumentarfilm. Auch nach dem Zweiten Weltkrieg lag sein Hauptbetätigungsfeld weiterhin beim Dokumentar-, später auch beim Fernsehfilm."
+            };
+
+            let currentLang = localStorage.getItem('edgar-lang') || 'en';
+
+            function setLanguage(lang) {
+                currentLang = lang;
+                localStorage.setItem('edgar-lang', lang);
+                description.innerHTML = texts[lang];
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    el.innerHTML = el.dataset[lang];
+                });
+                document.documentElement.lang = lang;
+
+                if (lang === 'en') {
+                    langEn.className = 'px-3 py-1 text-sm transition-colors rounded bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900';
+                    langDe.className = 'px-3 py-1 text-sm transition-colors rounded text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800';
+                } else {
+                    langDe.className = 'px-3 py-1 text-sm transition-colors rounded bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900';
+                    langEn.className = 'px-3 py-1 text-sm transition-colors rounded text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800';
+                }
+            }
+
+            // Initialize
+            setLanguage(currentLang);
+
+            langEn.addEventListener('click', () => setLanguage('en'));
+            langDe.addEventListener('click', () => setLanguage('de'));
+        })();
+    </script>
+
+    <!-- Lightbox Script -->
+    <script>
+        (function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            function openLightbox(src, alt) {
+                lightboxImg.src = src;
+                lightboxImg.alt = alt || '';
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Click on photo to open lightbox
+            document.querySelectorAll('.photo-container').forEach(container => {
+                container.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    if (img) {
+                        openLightbox(img.src, img.alt);
+                    }
+                });
+            });
+
+            // Click anywhere on lightbox to close
+            lightbox.addEventListener('click', closeLightbox);
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

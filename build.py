@@ -1,8 +1,10 @@
+from html import escape
 import json
 import os
 import re
 import time
 import unicodedata
+from urllib.parse import quote
 
 def nl2br(text):
     """Convert newlines to HTML <br> tags"""
@@ -32,9 +34,9 @@ def load_hollywood():
     with open('data/hollywood.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def load_thea():
-    """Load thea.json data"""
-    with open('data/thea.json', 'r', encoding='utf-8') as f:
+def load_subsite(slug):
+    """Load data/<slug>.json for a standalone subsite"""
+    with open(f'data/{slug}.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def get_nav_items(lang, current_page, photos):
@@ -216,21 +218,125 @@ def create_page(lang, page_name, data, template, photos, movies, css_version, ho
             photographer_label=labels[lang]['photographer']
         ))
 
-def create_thea_page(data, css_version):
-    """Generate the standalone thea subsite page"""
-    # Generate photo grid HTML
-    photos_html = ''
-    for photo in data["photos"]:
-        photos_html += '                <div class="photo-container">\n'
-        photos_html += f'                    <img src="images/{os.path.basename(photo["photo"])}" alt="Thea" class="w-full h-auto">\n'
-        photos_html += '                </div>\n'
+def create_subsite_page(slug, data, css_version):
+    """Generate a standalone subsite page (e.g. /thea, /edgar)"""
+    def photo_grid_html(photos):
+        grid = '            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">\n'
+        for photo in photos:
+            caption_en = nl2br(photo.get("description_en", ""))
+            caption_de = nl2br(photo.get("description_de", ""))
+            has_caption = caption_en or caption_de
+            if has_caption:
+                grid += '                <div class="space-y-4">\n'
+            grid += '                <div class="photo-container">\n'
+            grid += f'                    <img src="../{quote(photo["photo"])}" alt="{data["title"]}" class="w-full h-auto">\n'
+            grid += '                </div>\n'
+            if has_caption:
+                grid += f'                <p class="text-sm italic text-gray-600 dark:text-gray-400" data-en="{escape(caption_en)}" data-de="{escape(caption_de)}">{caption_en}</p>\n'
+                grid += '                </div>\n'
+        grid += '            </div>\n'
+        return grid
+
+    def youtube_thumb_html(video_id, title):
+        thumb = f'            <button type="button" class="relative block w-full overflow-hidden bg-black cursor-pointer group aspect-video" data-youtube="{escape(video_id)}" aria-label="{escape(re.sub(r'<[^>]+>', '', title))}">\n'
+        thumb += f'                <img src="https://i.ytimg.com/vi/{quote(video_id)}/hqdefault.jpg" alt="" class="object-cover w-full h-full transition-opacity group-hover:opacity-80">\n'
+        thumb += '                <span class="absolute inset-0 flex items-center justify-center">\n'
+        thumb += '                    <span class="flex items-center justify-center w-20 h-20 transition-colors rounded-full bg-black/70 group-hover:bg-black/90">\n'
+        thumb += '                        <svg class="w-10 h-10 ml-1 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>\n'
+        thumb += '                    </span>\n'
+        thumb += '                </span>\n'
+        thumb += '            </button>\n'
+        return thumb
+
+    # Generate photo grid HTML: either titled sections or a single grid
+    if "sections" in data:
+        gallery_html = ''
+        for section in data["sections"]:
+            gallery_html += '            <section class="mb-16">\n'
+            gallery_html += f'            <h3 class="mb-6 text-2xl font-semibold text-gray-900 dark:text-gray-100" data-en="{escape(section["title_en"])}" data-de="{escape(section["title_de"])}">{section["title_en"]}</h3>\n'
+            if "youtube" in section:
+                gallery_html += youtube_thumb_html(section["youtube"], section["title_en"])
+            else:
+                gallery_html += photo_grid_html(section["photos"])
+            gallery_html += '            </section>\n'
+    else:
+        gallery_html = photo_grid_html(data["photos"])
+
+    # Video modal, only needed when a section embeds a YouTube video
+    video_modal_html = ''
+    if any("youtube" in section for section in data.get("sections", [])):
+        video_modal_html = '''
+    <!-- Video Modal -->
+    <div id="video-modal" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <button id="video-modal-close" type="button" class="absolute p-2 text-white transition-opacity top-4 right-4 opacity-70 hover:opacity-100" aria-label="Close">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="w-[90vw] max-w-5xl aspect-video">
+            <iframe id="video-modal-frame" class="w-full h-full" src="" title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Video Modal Script -->
+    <script>
+        (function() {
+            const modal = document.getElementById('video-modal');
+            const frame = document.getElementById('video-modal-frame');
+
+            function openVideo(id) {
+                frame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0';
+                modal.classList.add('active');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeVideo() {
+                modal.classList.remove('active');
+                modal.setAttribute('aria-hidden', 'true');
+                frame.src = '';
+                document.body.style.overflow = '';
+            }
+
+            document.querySelectorAll('[data-youtube]').forEach(button => {
+                button.addEventListener('click', () => openVideo(button.dataset.youtube));
+            });
+
+            // Close on backdrop or close button, but not on the player itself
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal || e.target.closest('#video-modal-close')) {
+                    closeVideo();
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeVideo();
+                }
+            });
+        })();
+    </script>
+'''
+
+    # Optional external links shown below the description
+    links_html = ''
+    if data.get("links"):
+        links_html += '                <div class="flex flex-wrap gap-6 mt-6">\n'
+        for link in data["links"]:
+            links_html += f'                    <a href="{escape(link["url"])}" target="_blank" rel="noopener" class="text-lg text-gray-700 underline underline-offset-4 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">{link["label"]}</a>\n'
+        links_html += '                </div>\n'
+
+    # Optional portrait floated to the right of the intro text
+    portrait_html = ''
+    if data.get("portrait"):
+        portrait_html += '                <div class="float-right w-32 mb-4 ml-6 photo-container md:w-56">\n'
+        portrait_html += f'                    <img src="../{quote(data["portrait"])}" alt="{data["site_title"]}" class="w-full h-auto">\n'
+        portrait_html += '                </div>\n'
 
     html = f'''<!DOCTYPE html>
 <html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thea Ziesemar</title>
+    <title>{data["site_title"]}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
@@ -254,7 +360,7 @@ def create_thea_page(data, css_version):
     <header class="fixed top-0 left-0 right-0 z-40 border-b border-gray-200 bg-gray-50 dark:bg-gray-900 dark:border-gray-800">
         <div class="flex items-center justify-between max-w-5xl px-4 py-3 mx-auto md:px-8">
             <div>
-                <h1 class="text-xl font-bold text-gray-900 md:text-2xl dark:text-gray-100">Thea Ziesemar</h1>
+                <h1 class="text-xl font-bold text-gray-900 md:text-2xl dark:text-gray-100">{data["site_title"]}</h1>
             </div>
             <div class="flex items-center gap-4">
                 <!-- Dark Mode Toggle -->
@@ -275,15 +381,13 @@ def create_thea_page(data, css_version):
     <!-- Main Content Area -->
     <main class="pt-20">
         <div class="max-w-5xl px-4 py-8 mx-auto md:px-8 md:py-12">
-            <div class="mb-12">
-                <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data["title"]}</h2>
-                <p id="description" class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{data["description_en"]}</p>
-            </div>
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-{photos_html}            </div>
-        </div>
+            <div class="mb-12 flow-root">
+{portrait_html}                <h2 class="mb-4 text-3xl font-bold text-gray-900 md:text-5xl dark:text-gray-100">{data["title"]}</h2>
+                <p id="description" class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">{nl2br(data["description_en"])}</p>
+{links_html}            </div>
+{gallery_html}        </div>
     </main>
-
+{video_modal_html}
     <!-- Footer -->
     <footer class="py-6 mt-8 border-t border-gray-200 dark:border-gray-800">
         <div class="max-w-5xl px-4 mx-auto md:px-8">
@@ -370,16 +474,19 @@ def create_thea_page(data, css_version):
             const description = document.getElementById('description');
 
             const texts = {{
-                en: "{data["description_en"]}",
-                de: "{data["description_de"]}"
+                en: {json.dumps(nl2br(data["description_en"]), ensure_ascii=False)},
+                de: {json.dumps(nl2br(data["description_de"]), ensure_ascii=False)}
             }};
 
-            let currentLang = localStorage.getItem('thea-lang') || 'en';
+            let currentLang = localStorage.getItem('{slug}-lang') || 'en';
 
             function setLanguage(lang) {{
                 currentLang = lang;
-                localStorage.setItem('thea-lang', lang);
-                description.textContent = texts[lang];
+                localStorage.setItem('{slug}-lang', lang);
+                description.innerHTML = texts[lang];
+                document.querySelectorAll('[data-en]').forEach(el => {{
+                    el.innerHTML = el.dataset[lang];
+                }});
                 document.documentElement.lang = lang;
 
                 if (lang === 'en') {{
@@ -441,9 +548,9 @@ def create_thea_page(data, css_version):
 </body>
 </html>'''
 
-    # Write the thea page
-    os.makedirs('public/thea', exist_ok=True)
-    with open('public/thea/index.html', 'w', encoding='utf-8') as f:
+    # Write the subsite page
+    os.makedirs(f'public/{slug}', exist_ok=True)
+    with open(f'public/{slug}/index.html', 'w', encoding='utf-8') as f:
         f.write(html)
 
 def main():
@@ -497,10 +604,10 @@ def main():
         create_page('en', page_name, item, template, photos, movies, css_version)
         create_page('de', page_name, item, template, photos, movies, css_version)
 
-    # Create thea subsite
-    print("  Processing thea.json...")
-    thea = load_thea()
-    create_thea_page(thea, css_version)
+    # Create standalone subsites
+    for slug in ['thea', 'edgar']:
+        print(f"  Processing {slug}.json...")
+        create_subsite_page(slug, load_subsite(slug), css_version)
 
     # Create index page with language detection
     print("  Creating index page...")
